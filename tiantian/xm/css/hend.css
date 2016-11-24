@@ -1,0 +1,156 @@
+/*头部导航开始*/
+.head
+{
+	position: fixed;
+	top:0;
+	width:100%;
+	z-index: 99999;
+	background: rgba(0,0,0,0.7);
+	-pie-background: rgba(0,0,0,0.7);
+	behavior: url(PIE.htc);
+}
+.head .logo
+{
+	float: left;
+	padding: 10px 20px;
+}
+.head .logo img
+{
+	height: 40px;
+	border: 0;
+	vertical-align: top;
+}
+.headTag
+{
+	float: right;
+}
+.headTag01
+{
+	margin-right: 30px;
+}
+.headTagBtn
+{
+	 display: block;
+	width:126px;
+	font-size: 18px;
+	color:#fff;
+	 float:left;
+	 margin: 14px 10px 0 0;
+	 border-radius: 15px;
+	 behavior: url(PIE-1.0.0/PIE.htc);
+	 height:30px;
+	 line-height: 29px;
+	 border:solid 2px #de0752;
+	 text-align: center;
+}
+.headTag01 ul
+{
+	float: left;
+}
+.headTag01 ul li
+{
+	float: left;
+	line-height: 60px;
+	margin: 0 20px;
+}
+.headTag01 ul li a
+{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.business
+{
+	position: relative;
+}
+.headTag01 ul li span
+{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 3;
+}
+.headTag01 ul li span.businessSpan1
+{
+	background-image: url(../img/arrow01.png);
+	background-repeat: no-repeat;
+	background-position: 65px 27px;
+	padding-right: 25px;
+}
+/*.head .businessShow
+{
+	display: none;
+	z-index: 0;
+	opacity: 0;
+	right: -272px;
+}*/
+.OnlineQQ div
+{
+	width: 158px;
+	height: 40px;
+	line-height: 40px;
+	padding-top: 0;
+	position:absolute;
+	background-image: url(../img/business3.png);
+	background-repeat: no-repeat;
+}
+.headTag01 li  .businessShow>a
+{
+	font-size: 12px;
+	text-indent: 4em;
+}
+.businessShow>a:hover
+{
+	color:#C91313 ;
+}
+.head .logs div
+{
+	top: 57px;
+	position: absolute;
+	width: 220px;
+	height: 130px;
+	background-image: url(../img/business1.png);
+	background-repeat: no-repeat;
+	line-height: 29px;
+	padding: 13px 0 0 45px;
+	z-index: 1;
+}
+.head .logs div p
+{
+	color: #fff;
+	font-size: 12px;
+}
+.head .logs div p a
+{
+	font-size: 12px;
+}
+.head .logs div p a:hover
+{
+	color:#C91313 ;
+}
+.headTag01 li a:hover
+{
+	color: #C91313;
+}
+.headTag01 li span:hover
+{
+	color: #C91313;
+}
+.Box
+{
+	position: relative;
+	display: inline-block;
+}
+.language
+{
+	width: 55px;
+	height: 10px;
+	position: absolute;
+	line-height: 26px;
+	left: 0px;
+	background-image: none;
+	background-color: #000;
+}
+/*头部导航结束*/

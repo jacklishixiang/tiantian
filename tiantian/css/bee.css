@@ -1,0 +1,1331 @@
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+big,
+em,
+font,
+img,
+strong,
+tt,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	padding: 0;
+	margin: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 12px
+}
+
+ol,
+ul,
+li {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%
+}
+
+body {
+	min-width: 1000px;
+	margin: 0 auto;
+	font-size: 12px;
+	background: none;
+	font-family: "Microsoft YaHei", "Simsun", Arial
+}
+
+body,
+html {
+	height: 100%
+}
+
+td {
+	font-size: 12px;
+	line-height: 160%
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	width: auto !important;
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	outline: none !important
+}
+
+.hide {
+	display: none
+}
+
+a {
+	outline: none;
+	text-decoration: none
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table
+}
+
+.clearfix:after {
+	clear: both
+}
+
+*.clearfix {
+	zoom: 1
+}
+
+.fleft {
+	float: left
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px
+}
+
+::-webkit-scrollbar-track {
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.6)
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 0, 0, 0.7)
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(231, 231, 231, 0.4)
+}
+
+.hide {
+	display: none
+}
+
+.topNav {
+	width: 100%;
+	height: 70px;
+	min-width: 1000px;
+	background: rgba(0, 0, 0, 0.5) !important;
+	-pie-background: rgba(0, 0, 0, 0.5) !important;
+	behavior: url(PIE.htc);
+	line-height: 70px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+.main {
+	width: 1204px;
+	min-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	line-height: 70px;
+}
+
+.main .logo {
+	width: 140px;
+	height: 50px;
+	float: left;
+	display: block;
+	line-height: 110px;
+}
+
+.nav {
+	float: right;
+	position: relative;
+}
+
+.nav a {
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	font-family: "微软雅黑";
+	height: 70px;
+	line-height: 70px;
+	padding: 0 16px;
+}
+
+.nav a:hover {
+	color: #fff;
+	background-color: #00b7ff;
+}
+
+.nav ul {
+	width: 102px;
+	position: absolute;
+	top: 65px;
+	right: 0;
+	text-align: center;
+}
+
+.nav ul li {
+	float: left;
+	list-style: none;
+}
+
+.mainPopMenu {
+	display: none;
+}
+
+.mainPopMenu li a {
+	width: 102px;
+	height: 35px;
+	padding: 10px 0;
+	background-color: #00b7ff;
+	overflow: hidden;
+	line-height: 35px;
+	font-size: 14px;
+	color: #00577c;
+	display: block;
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+/*.on {
+	color: #fff;
+	background-color: #00b7ff;
+}*/
+
+.qu {
+	width: 70px;
+	height: 70px;
+	color: #00577c;
+	background-color: #00b7ff;
+}
+
+.mainPopMenu li a:hover {
+	color: #fff;
+}
+
+
+/*火箭开始*/
+
+.fixlogo {
+	position: fixed;
+	right: 5px;
+	top: 75%;
+	z-index: 9999;
+}
+
+.fixlogo img {
+	display: inline-block;
+	transform-origin: center center;
+	border: 0;
+	animation: move 8s linear infinite;
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	50% {
+		transform: translate3d(0px, -20px, 0px);
+	}
+	100% {
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+
+/*火箭结束*/
+
+
+/*官方QQ*/
+
+.QQMain {
+	width: 170px;
+	background: rgba(0, 0, 0, 0.5);
+	-pie-background: rgba(0, 0, 0, 0.5);
+	behavior: url(PIE.htc);
+	height: 125px;
+	padding: 5px 0;
+	border-radius: 5px;
+	text-align: center;
+	margin-top: -100px;
+	position: fixed;
+	right: 0;
+	top: 50%;
+	z-index: 10;
+}
+
+.QQMain p {
+	font: 16px "微软雅黑";
+	line-height: 30px;
+	padding-left: 21px;
+	padding-bottom: 10px;
+	background-image: url(../img/bee/QQ.png);
+	background-repeat: no-repeat;
+	background-position: 30px 5px;
+	color: #fff;
+}
+
+.QQMain a {
+	display: block;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	line-height: 20px;
+	padding-left: 25px;
+	text-align: left;
+	color: #fff;
+	padding-bottom: 8px;
+}
+
+.QQMain a.keyLink {
+	width: 95px;
+	height: 25px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	line-height: 33px;
+	border-radius: 10px;
+	background-color: #006fb7;
+	color: #fff;
+	display: inline-block;
+	margin: -4px auto;
+}
+
+
+/*官方QQ*/
+
+
+/*第一块内容开始*/
+
+.banner {
+	width: 100%;
+	height: 886px;
+	min-width: 1000px;
+	background-image: url(../img/bee/bg_top.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.mains
+{
+	width: 1204px;
+	min-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.lefs
+{
+	float: left;
+	width: 556px;
+	text-align: center;
+	padding-top: 230px;
+	position: relative;
+}
+.lefs h1
+{
+	color: #fff;
+	font-size: 38px;
+	font-family: "微软雅黑";
+	font-weight: normal;
+	position: absolute;
+	left: 25px;
+	top: 200px;
+	/*opacity: 0;*/
+	display:none;
+}
+.lefs h2
+{
+	color:#fff;
+	left: 105px;
+	top: 250px;
+	/*opacity: 0;*/
+	display: none;
+	position: absolute;
+	font-weight: normal;
+	padding: 10px 0;
+	font-size: 40px;
+	font-family: "微软雅黑";
+}
+.lefs h2 i
+{
+	font-style: normal;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.lefs .btn_down
+{
+	width: 245px;
+	height: 60px;
+	margin: 10px auto 0;
+	line-height: 60px;
+	text-align: center;
+	color: #fff;
+	font-size: 24px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	border-radius: 5px;
+	background-color:#006fb7 ;
+	display: block;
+	position: absolute;
+	left: 50%;
+	top: 320px;
+	margin-left: -122px;
+	/*opacity: 0;*/
+	display: none;
+}
+.guide
+{
+	font-size: 14px;
+	font-family: "微软雅黑";
+	position: absolute;
+	left: 223px;
+	top: 420px;
+	display: inline-block;
+	text-decoration: underline;
+	color: #fff;
+	display: none;
+}
+.lefs p
+{
+	width: 100%;
+	height: 70px;
+	text-align: center;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	color: #fff;
+	background-image: url(../img/bee/picture.png);
+	background-repeat: no-repeat;
+	background-position: center 9px;
+	position: absolute;
+	left: 0;
+	top: 480px;
+	display: none;
+}
+
+
+.rigfs
+{
+	width: 600px;
+	float: right;
+	position: relative;
+	margin-top: 70px;
+}
+.info_to
+{
+	width: 178px;
+	height: 148px;
+	left: -72px;
+	top: 70px;
+	z-index: 5;
+	position: absolute;
+	background-image: url(../img/bee/threenumber.png);
+	background-repeat: no-repeat;
+	display: none;
+	animation: ani .15s linear 1.3s 1 forwards;
+}
+
+@keyframes ani{
+	100%
+	{
+		transform: scale(1.1);
+	}
+	50%
+	{
+		transform: scale(1.5,1.5);
+	}
+	0%{
+		transform: scale(2,2);
+	}
+}
+
+/*轮播*/
+.slideWrap
+{
+	width: 553px;
+	height: 447px;
+	background-image:url(../img/bee/com.png);
+	background-repeat: no-repeat;
+	background-position: 0 115px;
+	padding-top: 120px;
+	overflow: hidden;
+}
+.slide
+{
+	width: 410px;
+	height: 250px;
+	overflow: hidden;
+	margin: 39px 0 0 3px;
+	position: relative;
+}
+.slideImg
+{
+	width: 410px;
+	height: 250px;
+	z-index: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	transition: all 2s;
+}
+.slideImgon
+{
+	opacity: 1;
+	z-index: 1;
+}
+
+.role
+{
+	width: 184px;
+	height: 453px;
+	position: absolute;
+	right: 280px;
+	top: 155px;
+}
+.role img
+{
+	width: 270px;
+	height: 352px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+	animation: 0.3s linear 0s 1 forwards ks;
+}
+.role .onlk
+{
+	display: block;
+	z-index: 3;
+}
+@keyframes ks{
+	0%{transform: translateX(0px) translateY(0px);opacity: 0;}
+	100%{transform: translateX(-184px) translateY(0px); opacity: 1;}
+}
+
+.b_game
+{
+	width: 330px;
+	height: 644px;
+	background-image: url(../img/bee/khd.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 48px;
+	top: 100px;
+	z-index: 4;
+}
+.b_text
+{
+	width:559px;
+	height: 169px;
+	background-image: url(../img/bee/an.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 46px;
+	top: 410px;
+	opacity: 0;
+	z-index: 5;
+	animation: .3s linear 1s 1 forwards ani_1_4;
+}
+@keyframes ani_1_4{
+	0%{transform: scale(1.5);opacity: 0;}
+	100%{transform: scale(1);opacity: 1;}
+}
+/*第一块内容结束*/
+
+/*<!--第二快内容开始-->*/
+
+.simulator {
+	width: 100%;
+	min-width: 1000px;
+	height: 704px;
+	background-image: url(../img/bee/ba_cencer.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.simulator h3 {
+	text-align: center;
+	color: #8b8b8b;
+	font-size: 34px;
+}
+
+.focusWrap {
+	width: 652px;
+	margin: 20px auto 0;
+}
+
+.focusLink {
+	width: 100%;
+	height: 105px;
+	text-align: center;
+}
+
+.focusLink a {
+	padding: 0 16px;
+	color: #ababab;
+	font-size: 14px;
+	float: left;
+	display: inline-block;
+	outline: none;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+
+.focusLink a.ttmnqLink i {
+	display: inline-block;
+	width: 55px;
+	height: 66px;
+	background-image: url(../img/bee/span.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+
+/*.focusLink a.ttmnqLink:hover i
+			{
+				background-position: -55px 0;
+				animation: a 0.3s linear forwards;
+			}*/
+
+.focusLink a:hover {
+	color: #0084d9;
+}
+
+@keyframes a {
+	0% {
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
+
+.focusLink a span {
+	padding: 10px 0;
+	display: block;
+}
+
+.focusLink a.sinazsLink i {
+	display: inline-block;
+	width: 71px;
+	height: 66px;
+	background-image: url(../img/bee/span.png);
+	background-repeat: no-repeat;
+	background-position: -111px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+.focusLink a.kpzsLink i {
+	display: inline-block;
+	width: 72px;
+	height: 63px;
+	background-image: url(../img/bee/span.png);
+	background-repeat: no-repeat;
+	background-position: -253px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+.focusLink a.xyandroidLink i {
+	display: inline-block;
+	width: 70px;
+	height: 72px;
+	background-image: url(../img/bee/span.png);
+	background-repeat: no-repeat;
+	background-position: -397px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+.focusLink a span.sp {
+	margin-top: 2px;
+}
+
+.focusLink a span.xl {
+	margin-top: -7px;
+}
+
+.focusLink a span.ys {
+	margin-top: -2px;
+}
+
+.focusLink a span.hma {
+	margin-top: -9px;
+}
+
+.focusLink a.ysLink i {
+	display: inline-block;
+	width: 59px;
+	height: 66px;
+	background-image: url(../img/bee/span.png);
+	background-repeat: no-repeat;
+	background-position: -537px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+.focusLink a.hmwLink i {
+	display: inline-block;
+	width: 70px;
+	height: 72px;
+	background-image: url(../img/bee/span.png);
+	background-repeat: no-repeat;
+	background-position: -655px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+
+/*轮播图设置*/
+
+.focus {
+	width: 650px;
+	height: 358px;
+	margin: 50px auto 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.focus ul {
+	position: absolute;
+	top: 0;
+}
+
+.focus ul li {
+	float: left;
+	width: 650px;
+	height: 358px;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*on的设置*/
+
+
+/*第一个轮播图on*/
+
+.focusLink a.on i {
+	transform: scale(1);
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	animation: a 0.3s linear forwards;
+}
+
+.focusLink a.on {
+	color: #0084d9;
+}
+
+
+/*第一个轮播图on*/
+
+.focusLink a.ttmnqLink.on i {
+	background-position: -55px 0;
+}
+
+.focusLink a.sinazsLink.on i {
+	background-position: -182px 0;
+}
+
+.focusLink a.kpzsLink.on i {
+	background-position: -325px 0;
+}
+
+.focusLink a.xyandroidLink.on i {
+	background-position: -467px 0;
+}
+
+.focusLink a.ysLink.on i {
+	background-position: -596px 0;
+}
+
+.focusLink a.hmwLink.on i {
+	background-position: -725px 0;
+}
+
+
+/*on的设置*/
+
+
+/*视频按钮*/
+
+.focus ul li a {
+	width: 121px;
+	height: 150px;
+	position: absolute;
+	left: 50%;
+	margin-left: -60px;
+	top: 50%;
+	margin-top: -60px;
+	text-align: center;
+	font-size: 16px;
+	display: block;
+	color: #fff;
+}
+
+.focus ul li i {
+	width: 121px;
+	height: 121px;
+	display: block;
+	background-image: url(../img/bee/quan.png);
+	background-repeat: no-repeat;
+	position: relative;
+	animation: liab 1s linear 0.05s infinite;
+}
+
+.focus ul li a em {
+	width: 52px;
+	height: 50px;
+	position: absolute;
+	left: 38px;
+	top: 35px;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+	background-image: url(../img/bee/play.png);
+	background-repeat: no-repeat;
+}
+
+.focus ul li a {
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-decoration: none;
+}
+
+@keyframes liab {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/*轮播图设置*/
+
+
+/*<!--第二快内容结束-->*/
+
+/*第三块开始*/
+.pc_name
+{
+	width: 100%;
+	min-width: 1000px;
+	height: 860px;
+	background-color: #492e99;
+	position: relative;
+}
+.pc_name h4
+{
+	width: 100%;
+	color: #fff;
+	font-family: "微软雅黑";
+	padding: 45px 0 65px;
+	position: absolute;
+	font-weight: normal;
+	left: 0;
+	top: -50px;
+	font-size: 40px;
+	text-align: center;
+	display: none;
+}
+.outside
+{
+	width: 602px;
+	/*display: none;*/
+	opacity: 0;
+	position: absolute;
+	left: -200px;
+	top: 270px;
+}
+.outside p
+{
+	width: 230px;
+    overflow: hidden;
+    color: #fff;
+    font-size: 76px;
+    padding-right: 80px;
+    opacity: 0;
+    background-image:url(../img/bee/sun-moth.png);
+    background-repeat: no-repeat;
+    background-position: 245px center;
+}
+.outside span
+{
+	color: #fff;
+    font-size: 24px;
+   opacity: 0;
+}
+.sunshine
+{
+	width: 100%;
+    height: 220px;
+    margin-top: 120px;
+    background: #0baef4;
+    position: relative;
+}
+.ani_left
+{
+	width: 414px;
+    height: 291px;
+    position: absolute;
+    left: 46px;
+    top: -90px;
+    /*opacity: 0;*/
+   background: url(../img/bee/car.png) no-repeat;
+}
+.ani_left i
+{
+	width: 82px;
+	height: 26px;
+	display: block;
+	opacity: 0;
+	background: url(../img/bee/pqi.png) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 240px;
+}
+.home
+{
+	width: 602px;
+	opacity: 0;
+	position: absolute;
+	right:-30px;
+	top:270px;
+}
+.home p
+{
+	width: 230px;
+	overflow: hidden;
+	float: right;
+	color: #fff;
+	font-size: 76px;
+	padding-left: 80px;
+	opacity: 0;
+	background:url(../img/bee/sun-moth.png) no-repeat;
+	background-position: -70px center;
+}
+.home span
+{
+	width: 100%;
+	display: block;
+	color: #fff;
+	font-size: 24px;
+	float: right;
+	text-align: right;
+}
+.night
+{
+	width: 100%;
+    height: 220px;
+    margin-top: 120px;
+    background: #34295c;
+    position: relative;
+    float: right;
+}
+.ani_right
+{
+	width: 470px;
+	height: 265px;
+	position: absolute;
+	right: 50px;
+	top: -90px;
+	opacity: 0;
+	background: url(../img/bee/word.png) no-repeat;
+}
+.ani_right i
+{
+	width: 37px;
+	height: 41px;
+	display: block;
+	background: url(../img/bee/bg_ani_3_2.png) no-repeat;
+	position: absolute;
+	left: 152px;
+	top: 86px;
+	animation: ab .8s ease-in-out .6s infinite ;
+}
+@keyframes ab{
+	2% {
+    transform: translate(0, 0) rotate(1.5deg);
+	}
+	4% {
+	    transform: translate(0, 0) rotate(-5.5deg);
+	}
+	6% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	8% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	10% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	12% {
+	    transform: translate(0, 0) rotate(-4.5deg);
+	}
+	14% {
+	    transform: translate(0, 0) rotate(3.5deg);
+	}
+	16% {
+	    transform: translate(0, 0) rotate(3.5deg);
+	}
+	18% {
+	    transform: translate(0, 0) rotate(4.5deg);
+	}
+	20% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	22% {
+	    transform: translate(0, 0) rotate(3.5deg);
+	}
+	24% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	26% {
+	    transform: translate(0, 0) rotate(-3.5deg);
+	}
+	28% {
+	    transform: translate(0, 0) rotate(-2.5deg);
+	}
+	30% {
+	    transform: translate(0, 0) rotate(7.5deg);
+	}
+	32% {
+	    transform: translate(0, 0) rotate(2.5deg);
+	}
+	34% {
+	    transform: translate(0, 0) rotate(7.5deg);
+	}
+	36% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	38% {
+	    transform: translate(0, 0) rotate(4.5deg);
+	}
+	40% {
+	    transform: translate(0, 0) rotate(-3.5deg);
+	}
+	42% {
+	    transform: translate(0, 0) rotate(-5.5deg);
+	}
+	44% {
+	    transform: translate(0, 0) rotate(3.5deg);
+	}
+	46% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	48% {
+	    transform: translate(0, 0) rotate(7.5deg);
+	}
+	50% {
+	    transform: translate(0, 0) rotate(6.5deg);
+	}
+	52% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	54% {
+	    transform: translate(0, 0) rotate(2.5deg);
+	}
+	56% {
+	    transform: translate(0, 0) rotate(-2.5deg);
+	}
+	58% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	60% {
+	    transform: translate(0, 0) rotate(-0.5deg);
+	}
+	62% {
+	    transform: translate(0, 0) rotate(3.5deg);
+	}
+	64% {
+	    transform: translate(0, 0) rotate(-6.5deg);
+	}
+	66% {
+	    transform: translate(0, 0) rotate(6.5deg);
+	}
+	68% {
+	    transform: translate(0, 0) rotate(7.5deg);
+	}
+	70% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	72% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	74% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	76% {
+	    transform: translate(0, 0) rotate(-5.5deg);
+	}
+	78% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	80% {
+	    transform: translate(0, 0) rotate(1.5deg);
+	}
+	82% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	84% {
+	    transform: translate(0, 0) rotate(3.5deg);
+	}
+	86% {
+	    transform: translate(0, 0) rotate(6.5deg);
+	}
+	88% {
+	    transform: translate(0, 0) rotate(-2.5deg);
+	}
+	90% {
+	    transform: translate(0, 0) rotate(6.5deg);
+	}
+	92% {
+	    transform: translate(0, 0) rotate(5.5deg);
+	}
+	94% {
+	    transform: translate(0, 0) rotate(-5.5deg);
+	}
+	96% {
+	    transform: translate(0, 0) rotate(-1.5deg);
+	}
+	98% {
+	    transform: translate(0, 0) rotate(-4.5deg);
+	}
+	0%, 100% {
+	    transform: translate(0, 0) rotate(0);
+	}
+}
+/*第三块结束*/
+/*第四块开始*/
+.android
+{
+	width: 100%;
+	height: 678px;
+	min-width: 1000px;
+	background-image: url(../img/bee/dsa.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	overflow: hidden;
+	position: relative;
+}
+.android h4
+{
+	width: 100%;
+	color: #fff;
+	font-size: 40px;
+	text-align: center;
+	font-weight: normal;
+	position: absolute;
+	left: 0;
+	top: 0px;
+	opacity: 0;
+}
+.ani-android
+{
+	width: 506px;
+	height: 460px;
+	position: absolute;
+	left: 50%;
+	margin-left: -253px;
+	top: 190px;
+}
+.on_1
+{
+	width: 506px;
+    height: 394px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/computi.png) no-repeat;
+    opacity: 0;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.on_2
+{
+	width: 495px;
+    height: 77px;
+    position: absolute;
+    left: 5px;
+    top: 240px;
+    background: url(../img/bee/bg_animate_4_2.png) no-repeat;
+    opacity: 0;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transform:scale(0.5);
+    -webkit-transform:scale(0.5);
+    -moz-transform:scale(0.5);
+    -ms-transform:scale(0.5);
+    -o-transform:scale(0.5);
+    transform-origin:50% 0;
+    -webkit-transform-origin:50% 0;
+    -moz-transform-origin:50% 0;
+    -ms-transform-origin:50% 0;
+    -o-transform-origin:50% 0;
+}
+.on_3
+{
+	width: 249px;
+    height: 384px;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    background: url(../img/and.png) no-repeat;
+    opacity: 0;
+}
+/*第四块结束*/
+/*第五块开始*/
+.link-more
+{
+	width: 100%;
+	 min-width: 1000px;
+    height: 364px;
+    background-color: #272728;
+    background-image: url(../img/Z.jpg);
+   background-repeat: no-repeat;
+   background-position: center top;
+    text-align: center;
+}
+.link-more h4
+{
+	color: #fff;
+    font-size: 40px;
+    padding: 190px 0 0;
+    text-align: center;
+    font-weight: normal;
+}
+.link-more a
+{
+	color: #fff;
+    font-size: 28px;
+    padding-top: 20px;
+    display: inline-block;
+}
+.footer
+{
+	padding: 0 0 20px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+.footer p
+{
+	padding: 20px 0 0;
+    color: #666666;
+    font-size: 14px;
+    font-style: normal;
+}
+.footer p a
+{
+	padding: 0 10px;
+    color: #666;
+}
+/*第五块结束*/

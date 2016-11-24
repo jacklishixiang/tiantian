@@ -1,0 +1,1586 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: url(../img/bg_bj2.png);
+	background-position:center top;
+	background-repeat: repeat;
+	background-color: #111016;
+	width:100%; overflow:hidden;
+	min-width: 1000px;
+}
+a {
+	color: #595959;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover {
+	color: #C91313;
+}
+
+.warpRightMeun {
+	position: fixed;
+	right: 50px;
+	top: 50%;
+	width: 20px;
+	margin-top: -50px;
+	z-index: 99999;
+}
+
+.warpRightMeun a {
+	display: block;
+	padding: 6px 4px;
+}
+
+.warpRightMeun a i {
+	width: 10px;
+	display: block;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+}
+
+.warpRightMeun a:hover i {
+	background-color: #fa0158;
+	border-color: #fa0158;
+}
+
+.warpRightMeun a.on i {
+	background-color: #fa0158;
+	border-color: #fa0158;
+}
+/*蜜蜂动画开始*/
+.mifeng {
+	display: inline-block;
+	transform-origin: center center;
+}
+
+.pokemon {
+	width: 244px;
+	height: 189px;
+	position: fixed;
+	right: 65px;
+	bottom: 100px;
+	/*background: url(img/1.png)no-repeat;
+				background-position: left top;*/
+	z-index: 999;
+	border: 0;
+	animation: a 8s linear infinite;
+	-webkit-animation: a 8s linear infinite;
+	-moz-animation: a 8s linear infinite;
+	-ms-animation: a 8s linear infinite;
+	-o-animation: a 8s linear infinite;
+}
+.pokemon img
+{
+	border: 0;
+}
+
+@keyframes a {
+	0% {
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-ms-transform: translate3d(0px, 0px, 0px);
+		-o-transform: translate3d(0px, 0px, 0px);
+	}
+	50% {
+		transform: translate3d(0px, -20px, 0px);
+		-webkit-transform: translate3d(0px, -20px, 0px);
+		-moz-transform: translate3d(0px, -20px, 0px);
+		-ms-transform: translate3d(0px, -20px, 0px);
+		-o-transform: translate3d(0px, -20px, 0px);
+	}
+	100% {
+		transform: translate3d(0px, 0px, 0px);
+		-webkit-transform: translate3d(0px, 0px, 0px);
+		-moz-transform: translate3d(0px, 0px, 0px);
+		-ms-transform: translate3d(0px, 0px, 0px);
+		-o-transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+
+.pokemon :hover {
+	animation-play-state: running;
+	animation-duration: 100ms;
+	animation-iteration-count: infinite;
+	animation-name: shake-rotate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes shake-rotate {
+	2% {
+		transform: translate(0, 0) rotate(0.5deg);
+	}
+	4% {
+		transform: translate(0, 0) rotate(-5.5deg);
+	}
+	6% {
+		transform: translate(0, 0) rotate(0.5deg);
+	}
+	8% {
+		transform: translate(0, 0) rotate(1.5deg);
+	}
+	10% {
+		transform: translate(0, 0) rotate(-1.5deg);
+	}
+	12% {
+		transform: translate(0, 0) rotate(-4.5deg);
+	}
+	14% {
+		transform: translate(0, 0) rotate(3.5deg);
+	}
+	16% {
+		transform: translate(0, 0) rotate(3.5deg);
+	}
+	18% {
+		transform: translate(0, 0) rotate(4.5deg);
+	}
+	20% {
+		transform: translate(0, 0) rotate(1.5deg);
+	}
+	22% {
+		transform: translate(0, 0) rotate(3.5deg);
+	}
+	24% {
+		transform: translate(0, 0) rotate(-1.5deg);
+	}
+	26% {
+		transform: translate(0, 0) rotate(-3.5deg);
+	}
+	28% {
+		transform: translate(0, 0) rotate(-2.5deg);
+	}
+	30% {
+		transform: translate(0, 0) rotate(7.5deg);
+	}
+	32% {
+		transform: translate(0, 0) rotate(2.5deg);
+	}
+	34% {
+		transform: translate(0, 0) rotate(7.5deg);
+	}
+	36% {
+		transform: translate(0, 0) rotate(-1.5deg);
+	}
+	38% {
+		transform: translate(0, 0) rotate(4.5deg);
+	}
+	40% {
+		transform: translate(0, 0) rotate(-3.5deg);
+	}
+	42% {
+		transform: translate(0, 0) rotate(-5.5deg);
+	}
+	44% {
+		transform: translate(0, 0) rotate(3.5deg);
+	}
+	46% {
+		transform: translate(0, 0) rotate(-1.5deg);
+	}
+	48% {
+		transform: translate(0, 0) rotate(7.5deg);
+	}
+	50% {
+		transform: translate(0, 0) rotate(6.5deg);
+	}
+	52% {
+		transform: translate(0, 0) rotate(1.5deg);
+	}
+	54% {
+		transform: translate(0, 0) rotate(2.5deg);
+	}
+	56% {
+		transform: translate(0, 0) rotate(-2.5deg);
+	}
+	58% {
+		transform: translate(0, 0) rotate(1.5deg);
+	}
+	60% {
+		transform: translate(0, 0) rotate(-0.5deg);
+	}
+	62% {
+		transform: translate(0, 0) rotate(3.5deg);
+	}
+	64% {
+		transform: translate(0, 0) rotate(-6.5deg);
+	}
+	66% {
+		transform: translate(0, 0) rotate(6.5deg);
+	}
+	68% {
+		transform: translate(0, 0) rotate(7.5deg);
+	}
+	70% {
+		transform: translate(0, 0) rotate(0.5deg);
+	}
+	72% {
+		transform: translate(0, 0) rotate(-0.5deg);
+	}
+	74% {
+		transform: translate(0, 0) rotate(0.5deg);
+	}
+	76% {
+		transform: translate(0, 0) rotate(-5.5deg);
+	}
+	78% {
+		transform: translate(0, 0) rotate(1.5deg);
+	}
+	80% {
+		transform: translate(0, 0) rotate(0.5deg);
+	}
+	82% {
+		transform: translate(0, 0) rotate(-0.5deg);
+	}
+	84% {
+		transform: translate(0, 0) rotate(3.5deg);
+	}
+	86% {
+		transform: translate(0, 0) rotate(6.5deg);
+	}
+	88% {
+		transform: translate(0, 0) rotate(-2.5deg);
+	}
+	90% {
+		transform: translate(0, 0) rotate(6.5deg);
+	}
+	92% {
+		transform: translate(0, 0) rotate(5.5deg);
+	}
+	94% {
+		transform: translate(0, 0) rotate(-5.5deg);
+	}
+	96% {
+		transform: translate(0, 0) rotate(-0.5deg);
+	}
+	98% {
+		transform: translate(0, 0) rotate(-4.5deg);
+	}
+	0%,
+	100% {
+		transform: translate(0, 0) rotate(0);
+	}
+}
+/*蜜蜂动画结束*/
+/*头部导航开始*/
+.head
+{
+	position: fixed;
+	top:0;
+	width:100%;
+	z-index: 99999;
+	background: rgba(0,0,0,0.7);
+	-pie-background: rgba(0,0,0,0.7);
+	behavior: url(PIE.htc);
+}
+.head .logo
+{
+	float: left;
+	padding: 10px 20px;
+}
+.head .logo img
+{
+	height: 40px;
+	border: 0;
+	vertical-align: top;
+}
+.headTag
+{
+	float: right;
+}
+.headTag01
+{
+	margin-right: 30px;
+}
+.headTagBtn
+{
+	 display: block;
+	width:126px;
+	font-size: 18px;
+	color:#fff;
+	 float:left;
+	 margin: 14px 10px 0 0;
+	 border-radius: 15px;
+	 behavior: url(PIE-1.0.0/PIE.htc);
+	 height:30px;
+	 line-height: 29px;
+	 border:solid 2px #de0752;
+	 text-align: center;
+}
+.headTag01 ul
+{
+	float: left;
+}
+.headTag01 ul li
+{
+	float: left;
+	line-height: 60px;
+	margin: 0 20px;
+}
+.headTag01 ul li a
+{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.business
+{
+	position: relative;
+}
+.headTag01 ul li span
+{
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 3;
+}
+.headTag01 ul li span.businessSpan1
+{
+	background-image: url(../img/arrow01.png);
+	background-repeat: no-repeat;
+	background-position: 65px 27px;
+	padding-right: 25px;
+}
+/*.head .businessShow
+{
+	display: none;
+	z-index: 0;
+	opacity: 0;
+	right: -272px;
+}*/
+.OnlineQQ div
+{
+	width: 158px;
+	height: 40px;
+	line-height: 40px;
+	padding-top: 0;
+	position:absolute;
+	background-image: url(../img/business3.png);
+	background-repeat: no-repeat;
+}
+.headTag01 li  .businessShow>a
+{
+	font-size: 12px;
+	text-indent: 4em;
+}
+.businessShow>a:hover
+{
+	color:#C91313 ;
+}
+.head .logs div
+{
+	top: 57px;
+	position: absolute;
+	width: 220px;
+	height: 130px;
+	background-image: url(../img/business1.png);
+	background-repeat: no-repeat;
+	line-height: 29px;
+	padding: 13px 0 0 45px;
+	z-index: 1;
+}
+.head .logs div p
+{
+	color: #fff;
+	font-size: 12px;
+}
+.head .logs div p a
+{
+	font-size: 12px;
+}
+.head .logs div p a:hover
+{
+	color:#C91313 ;
+}
+.headTag01 li a:hover
+{
+	color: #C91313;
+}
+.headTag01 li span:hover
+{
+	color: #C91313;
+}
+.Box
+{
+	position: relative;
+	display: inline-block;
+}
+.language
+{
+	width: 55px;
+	height: 10px;
+	position: absolute;
+	line-height: 26px;
+	left: 0px;
+	background-image: none;
+	background-color: #000;
+}
+/*头部导航结束*/
+/*内容开始*/
+/*第一块开始*/
+.wrap
+{
+	width: 100%;
+	background-image: url(../img/frite/header.jpg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+.wrap .top
+{
+	width: 770px;
+	margin: 90px auto;
+	text-align: center;
+	position: relative;
+}
+.wrap .topP
+{
+	width: 661px;
+	margin: 10px auto;
+	opacity: 1;
+	animation: c 1s linear 1s 1 normal running;
+	-webkit-animation: c 1s linear 1s 1 normal running;
+	-moz-animation: c 1s linear 1s 1 normal running;
+	-ms-animation: c 1s linear 1s 1 normal running;
+	-o-animation: c 1s linear 1s 1 normal running;
+	color: #9b999a;
+	text-align: 0 5px 8px #070102;
+	font-size: 31px;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+@keyframes  c{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+.wrap .download
+{
+	width: 770px;
+	height: 232px;
+	margin: 0 auto;
+	text-align: center;
+}
+.download li
+{
+	display: inline-block;
+	width: 170px;
+	margin: 0 10px;
+}
+.topBtn
+{
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-indent: -99999px;
+	background-image: url(../img/frite/Btm.png);
+	background-repeat: no-repeat;
+	background-position: 0 0px;
+	outline: 0 none;
+	margin: 60px auto 20px auto;
+}
+.clientInfo
+{
+	height: 21px;
+}
+.titlelink
+{
+	color: #fff;
+	font-size: 14px;
+}
+.exeInfo
+{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	margin-bottom: 35px;
+	line-height: 30px;
+	text-align: center;
+	color: #848285;
+}
+.activeben .topBtn
+{
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-indent: -99999px;
+	background-image: url(../img/frite/Btm.png);
+	background-repeat: no-repeat;
+	background-position: -150px 0px;
+	outline: 0 none;
+	margin: 60px auto 20px auto;
+}
+.mac .topBtn
+{
+	display: block;
+	width: 150px;
+	height: 40px;
+	text-indent: -99999px;
+	background-image: url(../img/frite/Btm.png);
+	background-repeat: no-repeat;
+	background-position: -300px 0px;
+	outline: 0 none;
+	margin: 60px auto 20px auto;
+}
+
+.topAvd
+{
+	display: none;
+	width:705px;
+	margin:0 auto;
+	height: 466px;
+	box-shadow: 0 0 25px rgba(255,7,83,0.3);
+	border-radius: 9px;
+	transform: perspective(0) rotateX(5deg) rotate(0deg);
+	transform-origin:center bottom;
+	clear:both;
+}
+.topAvd img
+{
+	border: 0;
+	vertical-align: top;
+}
+.topAnd
+{
+	display: block;
+	width: 182px;
+	height: 288px;
+	text-indent: -99999px;
+	position: absolute;
+	left: -170px;
+	z-index: 999;
+	background-image: url(../img/bg1.png);
+	background-repeat: no-repeat;
+	/*transition: all; 1s ease 0s;*/
+}
+.topHand
+{
+	display: block;
+	width: 296px;
+	height: 392px;
+	text-indent: -99999px;
+	position: absolute;
+	right: -280px;
+	z-index: 999;
+	background-image: url(../img/bg2.png);
+	background-repeat: no-repeat;
+}
+/*第一块结束*/
+
+/*第二块开始*/
+.floorOne
+{
+	position: relative;
+	background-image: url(../img/second/background.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	height: 700px;
+}
+.floorOneWrap
+{
+	top: 50%;
+	left: 50%;
+	width: 900px;
+	margin-top: -300px;
+	position: absolute;
+	overflow: hidden;
+	margin: -300px 0 0 -450px;
+	height: 590px;
+}
+.floorOneLeft
+{
+	float: left;
+	position: relative;
+	top: 130px;
+	transition: all 0.5s ease 0.2s;
+	-webkit-transition: all 0.5s ease 0.2s;
+	-moz-transition: all 0.5s ease 0.2s;
+	-ms-transition: all 0.5s ease 0.2s;
+	-o-transition: all 0.5s ease 0.2s;
+	left: 0px;
+	opacity: 0;
+	transform: translate(310px);
+	-webkit-transform: translate(310px);
+	-moz-transform: translate(310px);
+	-ms-transform: translate(310px);
+	-o-transform: translate(310px);
+}
+.floorOneBtn
+{
+	width: 67px;
+	height: 67px;
+	background-image:url(../img/second/floor1Play.png);
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	text-indent: -99999px;
+	border-radius: 33px;
+	behavior: url(PIE-1.0.0/PIE.htc);
+	top: 175px;
+	left: 100px;
+}
+.floorOneP
+{
+	top: 10px;
+	height: 335px;
+	color: #fff;
+	font-size: 24px;
+	left: 335px;
+	text-align: center;
+	position: absolute;
+}
+.floorOneMove
+{
+	width: 164px;
+	height: 164px;
+	background-image: url(../img/second/floor103.png);
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	top: -29px;
+	left: 300px;
+	text-indent: -999999px;
+	transform-origin: center 74px;
+	-webkit-transform-origin: center 74px;
+	-moz-transform-origin: center 74px;
+	-ms-transform-origin: center 74px;
+	-o-transform-origin: center 74px;
+	animation: jack 2s linear 0s infinite normal running;
+	-webkit-animation: jack 2s linear 0s infinite normal running;
+	-moz-animation: jack 2s linear 0s infinite normal running;
+	-ms-animation: jack 2s linear 0s infinite normal running;
+	-o-animation: jack 2s linear 0s infinite normal running;
+}
+@keyframes jack{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.floorOneRight
+{
+	float: right;
+	position: relative;
+	left: 0px;
+	transition: all 0.5s ease 0.2s;
+	-webkit-transition: all 0.5s ease 0.2s;
+	opacity: 0;
+	transform: translate(-310px,0);
+}
+.floorOneRight .floorOneBtn
+{
+	width: 67px;
+	height: 67px;
+	background-image:url(../img/second/floor1Play.png);
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	text-indent: -99999px;
+	border-radius: 33px;
+	behavior: url(PIE-1.0.0/PIE.htc);
+	top: 130px;
+	left: 150px;
+}
+.floorOneRight .floorOneP
+{
+	position: absolute;
+	top: 340px;
+	height: 335px;
+	color: #fff;
+	font-size: 24px;
+	left: 75px;
+	text-align: center;
+
+}
+.floorOneRight .floorOneMove
+{
+	width: 164px;
+	height: 164px;
+	background-image: url(../img/second/floor103.png);
+	background-repeat: no-repeat;
+	display: block;
+	position: absolute;
+	top: 307px;
+	left: 40px;
+	text-indent: -999999px;
+	transform-origin: center 74px;
+	-webkit-transform-origin: center 74px;
+	-moz-transform-origin: center 74px;
+	-ms-transform-origin: center 74px;
+	-o-transform-origin: center 74px;
+	animation: jack 2s linear 0s infinite normal running;
+	-webkit-animation: jack 2s linear 0s infinite normal running;
+	-moz-animation: jack 2s linear 0s infinite normal running;
+	-ms-animation: jack 2s linear 0s infinite normal running;
+	-o-animation: jack 2s linear 0s infinite normal running;
+}
+/*播放功能*/
+.videoplay
+{
+	background: rgba(0,0,0,0.8);
+	-pie-background: rgba(0,0,0,0.8);
+	behavior:url(PIE.htc);
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100008;
+}
+.videoshow
+{
+	position: absolute;
+	padding: 10px;
+	margin: -250px 0 0 -400px;
+	top: 50%;
+	left: 50%;
+	z-index: 9988;
+	background-color: #fff;
+}
+.remove
+{
+	width: 20px;
+	height: 20px;
+	z-index: 1000009;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-image: url(../img/tithed/close.png);
+	background-repeat: no-repeat;
+	background-position: 0 -40px;
+	text-indent: -999999px;
+}
+.videoplay.videoCurrent{
+	width:100%;
+	opacity: 1;
+	transition:all 0.2s;
+}
+/*第二块结束*/
+/*第三块开始*/
+.emulator
+{
+	height: 700px;
+	position: relative;
+}
+.emulator-3 .center
+{
+	width: 1000px;
+	height: 400px;
+	margin: -200px 0 0 -500px;
+}
+.center
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.marksBox
+{
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.emulator-3 .marks-1
+{
+	width: 440px;
+	height: 440px;
+	margin: -220px 0 0 -220px;
+	z-index: 1;
+	transition: all .9s ease-in .1s;
+	-webkit-transition: all .9s ease-in .1s;
+	-moz-transition: all .9s ease-in .1s;
+	-ms-transition: all .9s ease-in .1s;
+	-o-transition: all .9s ease-in .1s;
+	opacity: 0;
+	transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	
+	
+}
+
+.current .marks-1
+{
+	opacity: 1;
+	transition: all .6s ease-in .1s;
+	-webkit-transition: all .6s ease-in .1s;
+	-moz-transition: all .6s ease-in .1s;
+	-ms-transition: all .6s ease-in .1s;
+	-o-transition: all .6s ease-in .1s;
+	transform: translateX(10px) translateY(0px) translateZ(60px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(10px) translateY(0px) translateZ(60px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(10px) translateY(0px) translateZ(60px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(10px) translateY(0px) translateZ(60px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(10px) translateY(0px) translateZ(60px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+/*旋转设置*/
+.emulator-3 .marks
+{
+	border-radius:50%;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	padding: 0;
+}
+
+/*旋转big*/
+.emulator-3 .marks-1 .marksbg
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0.2;
+	background-image: url(../img/tithed/bg-marks1.png);
+	background-repeat: no-repeat;
+	animation: wlse 20s linear 0s infinite;
+	-webkit-animation: wlse 20s linear 0s infinite;
+	-moz-animation: wlse 20s linear 0s infinite;
+	-ms-animation: wlse 20s linear 0s infinite;
+	-o-animation: wlse 20s linear 0s infinite;
+}
+@-moz-keyframes wlse {
+    from { -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+@-ms-keyframes wlse {
+    from { -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+@-webkit-keyframes wlse {
+    from { -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+@keyframes wlse {
+    from { transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+
+/*旋转cencer*/
+.emulator-3 .marks-2
+{
+	width: 370px;
+	height: 370px;
+	margin: -185px 0 0 -185px;
+	z-index: 2;
+	transition: all .9s ease-in .1s;
+	-webkit-transition: all .9s ease-in .1s;
+	-moz-transition: all .9s ease-in .1s;
+	-ms-transition: all .9s ease-in .1s;
+	-o-transition: all .9s ease-in .1s;
+	opacity: 0;
+	transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.current .marks-2
+{
+	transition:all .6s ease-in .1s;
+	transition-delay:0.4s;
+	opacity:1;
+	transform:translateX(15px) translateY(0px) translateZ(70px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.emulator-3 .marks-2 .marksbg
+{
+	background-image: url(../img/tithed/bg-marks2.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	animation: wise 15s linear 0s infinite;
+	-webkit-animation: wise 15s linear 0s infinite;
+	-moz-animation: wise 15s linear 0s infinite;
+	-ms-animation: wise 15s linear 0s infinite;
+	-o-animation: wise 15s linear 0s infinite;	
+}
+@-moz-keyframes wise {
+    from { -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { -moz-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+@-ms-keyframes wise {
+    from { -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { -ms-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+@-webkit-keyframes wise {
+    from { -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { -webkit-transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+@keyframes wise {
+    from { transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); }
+    to { transform: translateX(0) translateY(0) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(-360deg) scaleX(1) scaleY(1) scaleZ(1); }
+}
+/*旋转small*/
+.emulator-3 .marks-3
+{
+	width: 290px;
+	height: 306px;
+	margin: -153px 0 0 -145px;
+	background-image: url(../img/tithed/mark3.png);
+	background-repeat: no-repeat;
+	border-radius: 0;
+	transition: all .9s ease-in .1s;
+	-webkit-transition: all .9s ease-in .1s;
+	-moz-transition: all .9s ease-in .1s;
+	-ms-transition: all .9s ease-in .1s;
+	-o-transition: all .9s ease-in .1s;
+	opacity: 0;
+	z-index: 3;
+	transform: translateX(20px) translateY(-20px) translateZ(30px) rotateX(2deg) rotateY(2deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(20px) translateY(-20px) translateZ(30px) rotateX(2deg) rotateY(2deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.current .marks-3
+{
+	transition:all .3s ease-in .1s;
+	transition-delay:0.4s;
+	opacity:1;
+	transform:translateX(10px) translateY(15px) translateZ(100px) rotateX(2deg) rotateY(2deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.marks-3 .marksbg
+{
+	color: #fff;
+	font-size: 36px;
+	position: absolute;
+	left: 0px;
+	top: 117px;
+	text-align: center;
+	width: 100%;
+	
+}
+/*文字开始*/
+.emulator-3 .marksText
+{
+	padding-top: 80px;
+}
+.emulator-3 .marksText
+{
+	position: absolute;
+	width: 413px;
+	height: 178px;
+	background-image: url(../img/tithed/bg-text.png);
+	background-repeat: no-repeat;
+	right: 0;
+	top: 110px;
+	opacity: 0;
+	transition: all .9s ease-in .1s;
+	-webkit-transition: all .9s ease-in .1s;
+	-moz-transition: all .9s ease-in .1s;
+	-ms-transition: all .9s ease-in .1s;
+	-o-transition: all .9s ease-in .1s;
+	transform:translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform:translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform:translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform:translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform:translateX(50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.marksText p
+{
+	font-size: 28px;
+	font-family: "微软雅黑";
+	color: #f8f8f8;
+}
+.current .marksText
+{
+	transition: all .5s ease-in .1s;
+	opacity:1;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	
+}
+/*第三块结束*/
+/*第四块开始*/
+.emulator-4
+{
+	background-image: url(../img/four/zm.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.emulator-4 .center
+{
+	width: 1000px;
+	height: 288px;
+	margin: -144px 0 0 -500px;
+}
+.box_one{
+	padding-top: 80px;
+}
+.emulator-4 .box_one{
+	width: 276px;
+	height: 177px;
+	position: absolute;
+	left: 100px;
+	top: 50%;
+	margin-top: -88px;
+	background-image: url(../img/four/wen.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 0.9s ease-in 0.1s;
+	-webkit-transition: all 0.9s ease-in 0.1s;
+	-moz-transition: all 0.9s ease-in 0.1s;
+	-ms-transition: all 0.9s ease-in 0.1s;
+	-o-transition: all 0.9s ease-in 0.1s;
+	transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(-50px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.current .box_one
+{
+	opacity: 1;
+	transition: all 0.5s ease-in 0.1s;
+	-webkit-transition: all 0.5s ease-in 0.1s;
+	-moz-transition: all 0.5s ease-in 0.1s;
+	-ms-transition: all 0.5s ease-in 0.1s;
+	-o-transition: all 0.5s ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.box_one p
+{
+	font-size: 28px;
+	font-family: "微软雅黑";
+	color: #fff;
+}
+
+.emulator-4 .box_two
+{
+	width: 380px;
+	height: 288px;
+	position: absolute;
+	right: 100px;
+	top: 0;
+	transform-style:preserve-3d;
+	-webkit-transform-style:preserve-3d;
+	-moz-transform-style:preserve-3d;
+	-ms-transform-style:preserve-3d;
+	-o-transform-style:preserve-3d;
+	transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.emulator-4 .right
+{
+	width: 380px;
+	height: 288px;
+	margin: -144px 0 0 -190px;
+	background-image: url(../img/four/right.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(20px) translateY(0px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(20px) translateY(0px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(20px) translateY(0px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(20px) translateY(0px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(20px) translateY(0px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	z-index: 1;
+}
+.current .right
+{
+	opacity: 1;
+	transition: all 0.6s  ease-in 0.1;
+	-webkit-transition: all 0.6s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.6s  ease-in 0.1s;
+	-o-transition: all 0.6s  ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	
+}
+.emulator-4 .rimg
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+.emulator-4 .right_task1
+{
+	width: 301px;
+	height: 190px;
+	background-image: url(../img/four/right-li.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 2;
+	margin: -95px 0 0 -153px;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(10px) translateY(5px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(10px) translateY(5px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(10px) translateY(5px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(10px) translateY(5px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(10px) translateY(5px) translateZ(-30px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.current .right_task1
+{
+	opacity: 1;
+	transition: all 0.6s  ease-in 0.1;
+	-webkit-transition: all 0.6s  ease-in 0.1s;
+	-moz-transition: all 0.6s  ease-in 0.1s;
+	-ms-transition: all 0.6s  ease-in 0.1s;
+	-o-transition: all 0.6s  ease-in 0.1s;
+	transform: translateX(-5px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(-5px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(-5px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(-5px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(-5px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.emulator-4 .right_task2
+{
+	width: 301px;
+	height: 190px;
+	background-image: url(../img/four/right-lis.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	z-index: 1;
+	margin: -95px 0 0 -153px;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.current .right_task2
+{
+	opacity: 1;
+	transition: all 0.8s  ease-in 0.1;
+	-webkit-transition: all 0.8s  ease-in 0.1s;
+	-moz-transition: all 0.8s  ease-in 0.1s;
+	-ms-transition: all 0.8s  ease-in 0.1s;
+	-o-transition: all 0.8s  ease-in 0.1s;
+	transform: translateX(5px) translateY(10px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(5px) translateY(10px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(5px) translateY(10px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(5px) translateY(10px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(5px) translateY(10px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+/*<!--第四块结束-->*/
+/*第五块开始*/
+.emulator
+{
+	height: 700px;
+	position: relative;
+}
+.emulator-5 .center
+{
+	width: 1000px;
+	height: 358px;
+	margin: -259px 0 0 -500px;
+}
+.emulator-5 .CtrlBox
+{
+	width: 577px;
+	height: 358px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	margin-top: -149px;
+}
+.emulator-5 .CtrlBoxleft
+{
+	width: 577px;
+	height: 163px;
+	margin: -81px 0 0 -288px;
+	z-index: 1;
+	background-image: url(../img/five/banbox.png);
+	background-repeat: no-repeat;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	opacity: 0;
+}
+.emulator-5 .ctrl
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform-style:preserve-3d;
+}
+.current .CtrlBoxleft
+{
+	opacity: 1;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.emulator-5 .CtrlBoxright
+{
+	width: 363px;
+	height: 358px;
+	background-image: url(../img/five/mousehend.png);
+	background-repeat: no-repeat;
+	margin: -150px  0 0 -181px;
+	z-index: 2;
+	opacity: 0;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(0px) translateY(10px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-webkit-transform: translateX(0px) translateY(10px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-moz-transform: translateX(0px) translateY(10px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-ms-transform: translateX(0px) translateY(10px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-o-transform: translateX(0px) translateY(10px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+}
+.current .CtrlBoxright
+{
+	opacity: 1;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.emulator-5 .right-anniu
+{
+	width: 331px;
+	height: 177px;
+	margin: -188px 0 0 -148px;
+	background-image: url(../img/five/mousehend-01.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(-4px) translateY(7px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(-4px) translateY(7px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(-4px) translateY(7px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(-4px) translateY(7px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(-4px) translateY(7px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.current .right-anniu
+{
+	opacity: 1;
+	transition-delay: 0.9s;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+.emulator-5 .ControlText
+{
+	padding-top: 80px;
+	width: 372px;
+	height: 178px;
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	margin-top: -88px;
+	background-image: url(../img/five/bg-text.png);
+	background-repeat: no-repeat;
+	opacity: 0;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateX(50px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(0px) scaleX(1) scaleY(1);
+	-webkit-transform: translateX(50px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-moz-transform: translateX(50px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-ms-transform: translateX(50px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+	-o-transform: translateX(50px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleZ(1) scaleX(1) scaleY(1);
+}
+.current .ControlText
+{
+	opacity: 1;
+	transition: all 0.5s ease-in 0.1s;
+	-webkit-transition: all 0.5s ease-in 0.1s;
+	-moz-transition: all 0.5s ease-in 0.1s;
+	-ms-transition: all 0.5s ease-in 0.1s;
+	-o-transition: all 0.5s ease-in 0.1s;
+	transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-webkit-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-moz-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-ms-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+	-o-transform: translateX(0px) translateY(0px) translateZ(0px) rotateZ(0deg) rotateX(0deg) rotateY(0deg) scaleX(1) scaleY(1) scaleZ(1);
+}
+
+.ControlText p
+{
+	font-size: 28px;
+	font-family: "微软雅黑";
+	color: #f8f8f8;
+}
+/*第五块结束*/
+/*第六块开始*/
+.emulator-6
+{
+	height: 700px;
+	position: relative;
+	background-image: url(../img/six/star.png);
+	background-repeat: no-repeat;
+	background-position: right 30px;
+}
+.emulator-6 .center
+{
+	width: 1000px;
+	height: 358px;
+	margin: -200px 0 0 -500px;
+	color:#dbdbdb;
+}
+.emulator-6 .text
+{
+	padding: 0 0 70px;
+	opacity: 0;
+}
+.current .text
+{
+	opacity: 1;
+	transition: all 0.9s  ease-in 0.1s;
+	-webkit-transition: all 0.9s  ease-in 0.1s;
+	-moz-transition: all 0.9s  ease-in 0.1s;
+	-ms-transition: all 0.9s  ease-in 0.1s;
+	-o-transition: all 0.9s  ease-in 0.1s;
+	transform: translateY(10px);
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	-ms-transform: translateY(10px);
+	-o-transform: translateY(10px);
+}
+.emulator-6 .center .text .ingo
+{
+	width: 385px;
+	float: left;
+}
+.text .ingo .titleH
+{
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #ff0843;
+	font-weight: normal;
+	margin: 0 auto 10px;
+}
+.text .ingo .titleH:before
+{
+	width: 3px;
+	height: 17px;
+	display: inline-block;
+	content: "";
+	background-color:#ff0843;
+	margin-right: 10px;
+}
+.emulator-6 .center .text .ingo p
+{
+	font-size: 14px;
+	font-family:  "微软雅黑";
+	padding: 5px 0;
+	line-height: 26px;
+}
+.emulator-6 .center .text .ingo p .amore
+{
+	color:#ff0843 ;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 26px;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.emulator-6 .newsList
+{
+	width: 510px;
+	float: right;
+}
+.emulator-6 .newsList ul
+{
+	list-style: none;
+}
+.emulator-6 .newsList ul li
+{
+	width: 510px;
+}
+.emulator-6 .titleH
+{
+	font-size: 18px;
+	color:#ff0843 ;
+	margin: 0 auto 10px;
+	font-style: normal;
+	display: inline-block;
+}
+.emulator-6 .titleH:before
+{
+	width: 3px;
+	height: 17px;
+	display: inline-block;
+	content: "";
+	background-color:#ff0843;
+	margin-right: 10px;
+}
+.emulator-6 .newsList .amore
+{
+	float: right;
+	line-height: 26px;
+	color: #ff0843;
+	font-style: normal;
+}
+.emulator-6 .newsList ul li
+{
+	border-bottom:1px #2d2d30 dotted;
+	line-height: 32px;
+}
+.newsList .newsTitle{
+	display: inline-block;
+
+}
+.newsList .newsTitle a
+{
+	color:#cdcdcd ;
+}
+.newsList .newsTitle a:hover
+{
+	color: #C91313;
+}
+.newsList .time
+{
+	float: right;
+}
+.emulator-6 .link
+{
+	opacity: 0;
+	bottom: 0;
+	left: 0;
+	margin-left: 0;
+	margin-top: 10px;
+	position: relative;
+	width: 1000px;
+	border-top: 1px solid #2d2d32;
+	padding-top: 15px;
+}
+.current .link
+{
+	opacity: 1;
+	transition: all 0.5s ease-in 0.1s;
+	-webkit-transition: all 0.5s ease-in 0.1s;
+	-moz-transition: all 0.5s ease-in 0.1s;
+	-ms-transition: all 0.5s ease-in 0.1s;
+	-o-transition: all 0.5s ease-in 0.1s;
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px);
+}
+.link ul
+{
+	list-style: none;
+}
+.link ul li
+{
+	float: left;
+	width: 100px;
+	line-height: 22px;
+}
+.link ul li a
+{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #a6a6a7;
+	text-decoration: none;
+	cursor: pointer;
+}
+.footer
+{
+	position: relative;
+	bottom:0;
+	left: 0;
+	margin-left: 0;
+	margin-top: 10px;
+	opacity: 0;
+	color: #808080;
+	text-align: center;
+	font-size: 14px;
+	padding: 15px 0 30px;
+}
+.current .footer
+{
+	opacity: 1;
+	transition: all 0.5s ease-in 0.1s; 
+	-webkit-transition: all 0.5s ease-in 0.1s; 
+	-moz-transition: all 0.5s ease-in 0.1s; 
+	-ms-transition: all 0.5s ease-in 0.1s; 
+	-o-transition: all 0.5s ease-in 0.1s;
+	transform: translateY(-10px);
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	-o-transform: translateY(-10px); 
+}
+.footer .text
+{
+	display: inline-block;
+	width: auto;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.footer .text a
+{
+	color: #595959;
+	text-decoration: none;
+	cursor: pointer;
+	font-size: 14px;
+	font-family: "微软雅黑";
+}
+.footerlogo
+{
+	text-align: center;
+	margin: 10px 0;
+}
+.footerlogo span
+{
+	text-align: center;
+}

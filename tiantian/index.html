@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天天模拟器</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="shortcut icon" href="favicon1.ico"/>
+		<style>
+		
+		</style>
+	</head>
+	<body>
+		<div class="warpRightMeun" id="warpRightMeun">
+			<a href="javascript:;" class="on"><i></i></a>
+			<a href="javascript:;"><i></i></a>
+			<a href="javascript:;"><i></i></a>
+			<a href="javascript:;"><i></i></a>
+			<a href="javascript:;"><i></i></a>
+			<a href="javascript:;"><i></i></a>
+		</div>
+		<!--导航开始-->
+		<div class="head  clearfix">
+			<div class="logo">
+				<a href="#"><img src="img/logo.png"></a>
+			</div>
+			<div class="headTag headTag01 clearfix">
+			<a href="javascript:;" target="_blank" class="headTagBtn hide" id="headTagBtn">立即下载</a>
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="ttnews.html">最新资讯</a></li>
+				<li><a href="kpzs.html">应用中心</a></li>
+				<li><a href="#">交流论坛</a></li>
+				<li class="business OnlineQQ" >
+					<span class="businessSpan1">在线客服</span>
+					<div class="businessShow" style="display: none; z-index: 0; opacity: 0; right: -272px;">
+						<a href="#">QQ：800054015</a>
+					</div>
+				</li>
+				<li class="business logs" id="headTagIcon">
+					<span class="businessSpan1">商务合作</span>
+					<div class="businessShow" style="display: none; z-index: 0; opacity: 0; right: -272px;">
+						<p>联系人：叶女士</p>
+						<p>电话：13705970700</p>
+						<p>
+							<a href="#" target="_blank">QQ：2713271903</a>
+						</p>
+						<p>邮箱：yeshu@kaopu001.com</p>
+					</div>
+				</li>
+				<li class="Box hide" id="Box">
+					<span class="businessSpan1">中文</span>
+					<div class="language hide" id="language">
+						<p>
+							<a href="#">中文</a>
+						</a>
+						<p>
+							<a href="/en">English</a>
+						</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<!--导航结束-->
+		<!--第一块开始-->
+		<div class="floor wrap currentDefault current" style="height: 364px;">
+			<div class="top">
+				<h2 title="岂止于快">
+					<img src="img/frite/title.png" />
+				</h2>
+				<p class="topP">做最好的安卓模拟器，国内首款，完美支持手柄</p>
+				<ul class="download">
+					<li>
+						<a href="javascript:;" target="_blank" class="topBtn">立即下载天天模拟器</a>
+						<p class="clientInfo">
+							<a href="#" class="titlelink">【客户端下载器】</a>
+						</p>
+						<p class="exeInfo">版本号：1.4.1051<br />更新日期：2016.9.30</p>
+					</li>
+					<li class="activeben">
+						<a href="javascript:;" target="_blank" class="topBtn">立即下载天天模拟器</a>
+						<p class="clientInfo">
+							<a href="#" class="titlelink">【客户端下载器】</a>
+						</p>
+						<p class="exeInfo">版本号：1.4.1047<br />更新日期：2016.7.5</p>
+					</li>
+					<li class="mac">
+						<a href="javascript:;" target="_blank" class="topBtn">立即下载天天模拟器</a>
+						<p class="clientInfo">
+							<a href="#" class="titlelink">【MAC下载器】</a>
+						</p>
+						<p class="exeInfo">版本号：1.0.1000<br />Mac系统用户推荐</p>
+					</li>
+				</ul>
+				<div class="topAvd">
+					<img src="img/frite/xiapiture.png">
+				</div>
+				<span class="topAnd">安卓背景</span>
+				<span class="topHand">游戏手柄</span>
+			</div>
+		</div>
+		<!--第一块结束-->
+		<!--第二块开始-->
+		<div class="floor floorOne  clearfix" id="floorOne" style="height: 700px;">
+			<div class="floorOneWrap">
+				<div class="floorOneLeft">
+					<img src="img/second/floor102.png">
+					<a href="javascript:;" class="floorOneBtn" data-index ="0">播放</a>
+					<p class="floorOneP">
+						运行效果<br />演示
+					</p>
+					<span class="floorOneMove">旋转</span>
+				</div>
+				<div class="floorOneRight">
+					<img src="img/second/floor101.png" class="floorOneRightImg">
+					<a href="javascript:;" class="floorOneBtn" data-index ="1">播放</a>
+					<p class="floorOneP">手柄操作<br />演示</p>
+					<span class="floorOneMove">旋转</span>
+				</div>
+			</div>
+		</div>
+		<div class="videoplay" id="videoplay">
+			<div class="videoshow">
+				<span class="remove" id="close">关闭</span>
+			</div>
+		</div>
+		<!--第三块开始-->
+		<div class="floor emulator emulator-3" style="height: 700px;">
+			<div class="center">
+				<div class="marksBox">
+					<div class="marks marks-1">
+						<div class="marksbg"></div>
+					</div>
+					<div class="marks marks-2">
+						<div class="marksbg"></div>
+					</div>
+					<div class="marks marks-3" id="marks-3">
+						<div class="marksbg" id="box1">0+</div>
+					</div>
+				</div>
+				<div class="marksText">
+					<p>满帧60，跑分60000+<br />流畅程度远超手机</p>
+				</div>
+			</div>
+		</div>
+		<!--第三块结束-->
+		<!--第四块开始-->
+		<div class="floor emulator emulator-4" style="height: 700px;">
+			<div class="center">
+				<div class="box_one">
+					<p>支持市面上99%手游<br />热门大作一网打尽</p>
+				</div>
+				<div class="box_two">
+					<div class="rimg right">
+						<div class="rimg right_task1"></div>
+						<div class="rimg right_task2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--第四块结束-->
+		<!--第五块开始-->
+		<div class="floor emulator emulator-5">
+			<div class="center">
+				<div class="CtrlBox">
+					<div class="ctrl CtrlBoxleft"></div>
+					<div class="ctrl CtrlBoxright">
+						<div class="ctrl right-anniu"></div>
+					</div>
+				</div>
+				<div class="ControlText">
+					<p>键盘完美操控，手柄即插即用<br />玩游戏就要快人一步</p>
+				</div>
+			</div>
+		</div>
+		<!--第五块结束-->
+		<!--第六块开始-->
+		<div class="floor emulator emulator-6">
+			<div class="center">
+				<div class="text clearfix">
+					<div class="ingo">
+						<h5 class="titleH">软件介绍</h5>
+						<p>天天安卓引擎是一款可以让安卓应用程序在Windows系统上运行的神奇软件，由国人自主研发、支持OpenGL硬件加速，是目前性能最好的安卓安卓引擎。天天安卓引擎让你在电脑上体验使用安卓手机的畅快感觉，拖拽安装的功能可以让几万款安卓应用轻松的一键安装。键鼠、自适应分辨率、屏幕翻转和音量控制一应俱全，特别是超大的屏幕，让你体验普通手机所无法达到的视觉效果……<a href="javascript:;" class="amore">更多</a></p>
+					</div>
+					<div class="newsList">
+						<h5 class="titleH">资讯动态</h5>
+						<a href="#" class="amore">更多>></a>
+						<ul class="clearfix">
+							<li class="clearfix">
+								<div class="newsTitle">
+									<a href="#" title="口袋妖怪经典再现《宠物大乱斗》天天模拟器电脑极速体验">口袋妖怪经典再现《宠物大乱斗》天天模拟器电脑极速体验</a>
+								</div>
+								<span class="time">2016/11/4</span>
+							</li>
+							<li class="clearfix">
+								<div class="newsTitle">
+									<a href="#" title="还原经典动画《不良人2》官方授权手游 天天模拟器上线">还原经典动画《不良人2》官方授权手游 天天模拟器上线</a>
+								</div>
+								<span class="time">2016/11/3</span>
+							</li>
+							<li class="clearfix">
+								<div class="newsTitle">
+									<a href="#" title="天天模拟器极速畅玩《不良人2》靠谱游戏福利多">天天模拟器极速畅玩《不良人2》靠谱游戏福利多</a>
+								</div>
+								<span class="time">2016/11/1</span>
+							</li>
+							<li class="clearfix">
+								<div class="newsTitle">
+									<a href="#" title="天天模拟器自带推推直播 分享属于你的乐趣">天天模拟器自带推推直播 分享属于你的乐趣</a>
+								</div>
+								<span class="time">2016/10/28</span>
+							</li>
+							<li class="clearfix">
+								<div class="newsTitle">
+									<a href="#" title="一键录制轻松上传 天天模拟器录制功能">一键录制轻松上传 天天模拟器录制功能</a>
+								</div>
+								<span class="time">2016/10/27</span>
+							</li>
+							<li class="clearfix">
+								<div class="newsTitle">
+									<a href="#" title="献给《HIT:我守护的一切》迎首发登录必得6元代金券">献给《HIT:我守护的一切》迎首发登录必得6元代金券</a>
+								</div>
+								<span class="time">2016/10/27</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="link">
+					<div class="linHead clearfix">
+						<h5 class="titleH">友情链接</h5>
+					</div>
+					<ul class="clearfix">
+						<li>
+							<a href="javascript:;">联想乐商店</a>
+						</li>
+						<li>
+							<a href="javascript:;">手游排行榜</a>
+						</li>
+						<li>
+							<a href="javascript:;">破解游戏</a>
+						</li>
+						<li>
+							<a href="javascript:;">找手游手机网</a>
+						</li>
+						<li>
+							<a href="javascript:;">极速下载</a>
+						</li>
+						<li>
+							<a href="javascript:;">99软件站</a>
+						</li>
+						<li>
+							<a href="javascript:;">石器时代之疯狂原始人</a>
+						</li>
+						<li>
+							<a href="javascript:;">剑侠世界手游电脑版</a>
+						</li>
+						<li>
+							<a href="javascript:;">手游助手</a>
+						</li>
+						 <li>
+                            <a href="javascript:;" title="ip代理" target="_blank">ip代理</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="安卓软件下载" target="_blank">安卓软件下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="仓库管理软件" target="_blank">仓库管理软件</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="爪游控" target="_blank">爪游控</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="软件下载" target="_blank">软件下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="手机游戏礼包" target="_blank">手机游戏礼包</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="安卓手游网" target="_blank">安卓手游网</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="安卓下载" target="_blank">安卓下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="说玩网" target="_blank">说玩网</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="电脑软件下载" target="_blank">电脑软件下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="多玩3ds" target="_blank">多玩3ds</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="着迷wiki" target="_blank">着迷wiki</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="91vpn" target="_blank">91vpn</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="魔兽世界" target="_blank">魔兽世界</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="火影忍者" target="_blank">火影忍者</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="手机软件下载" target="_blank">手机软件下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="西西下载" target="_blank">西西下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="梦幻西游手游" target="_blank">梦幻西游手游</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="单机游戏推荐" target="_blank">单机游戏推荐</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="视频录制软件" target="_blank">视频录制软件</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="按键精灵论坛" target="_blank">按键精灵论坛</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="手机游戏交易平台" target="_blank">手机游戏交易平台</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="软件下载" target="_blank">软件下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="页游家" target="_blank">页游家</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="手游排行榜" target="_blank">手游排行榜</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title=" 游民星空下载站" target="_blank"> 游民星空下载站</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="仓库管理软件" target="_blank">仓库管理软件</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="好玩的手机游戏" target="_blank">好玩的手机游戏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="兔玩英雄联盟" target="_blank">兔玩英雄联盟</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="好玩的手机游戏" target="_blank">好玩的手机游戏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="ucbug下载站" target="_blank">ucbug下载站</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="LOL" target="_blank">LOL</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="魔兽地图下载" target="_blank">魔兽地图下载</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="手机游戏下载" target="_blank">手机游戏下载</a>
+                        </li>
+                        <li>
+                            <a href="http://www.ttz.com/" title="玩游戏赚钱" target="_blank">玩游戏赚钱</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="拼命下载站" target="_blank">拼命下载站</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="游盈网" target="_blank">游盈网</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="喂6399游戏" target="_blank">喂6399游戏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title=" 米酷网" target="_blank"> 米酷网</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="好玩的手机游戏" target="_blank">好玩的手机游戏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="66U手机游戏" target="_blank">66U手机游戏</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="安卓模拟器" target="_blank">安卓模拟器</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="靠谱助手" target="_blank">靠谱助手</a>
+                        </li>
+                        <li>
+                            <a href="javascript:; " title="u盘装系统" target="_blank">u盘装系统</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" title="欧普软件园" target="_blank">欧普软件园</a>
+                        </li>
+
+					</ul>
+				</div>
+				<div class="footer clearfix">
+					<p class="text">版权所有 ©<a href="#">天天模拟器</a><br />闽ICP备13020497号-1</p>
+					<div class="footerlogo">
+						<span><a class="logo_aq_auth"><img src="img/six/shiming.png"></a></span>
+						<span style="padding-left: 20px; padding-top: 10px"><a href="#"><img src="img/six/sb.png"></a></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--第六块结束-->
+		
+		<a href="bee.html" class="pokemon mifeng" id="pokemon"><img src="img/1.png"></a>
+		<script type="text/javascript" src="js/jquery-1.12.4.js" ></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/lubo.js" ></script>
+		<script>
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/find.css">
+</head>
+<body ng-app="findApp">
+	<div class="header">
+		<div class="container">
+			<img src="assets/img/find/logo3.png" alt="">
+		</div>
+	</div>
+	<div class="content">
+		<div class="container">
+			<div class="con_frame">
+				<div class="title">
+					找回账号
+				</div>
+				<div class="con" ng-controller="findCtrl">
+					<div class="con_form">
+						<form action="find_submit" name="findForm" method="get" accept-charset="utf-8">
+							<div class="inp">
+								<ul class="clearfix">
+									<li class="con_title">绑定的邮箱：</li>
+									<li class="con_input">
+										<input id="Email" name="Email" placeholder="请输入账号的绑定邮箱" type="Email" value="" ng-model="userEmail" required>
+										<div class="need">*</div>
+										<div class="wrong_tip" ng-show="findForm.Email.$error.required">
+											<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true">不能为空！</span>
+										</div>
+										<div class="wrong_tip" ng-show="findForm.Email.$error.email">
+											<span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true">非法字符！请输入邮箱</span>
+										</div>
+									</li>
+									<li class="con_title">验证码：</li>
+									<li class="con_input con_yzm_box">
+										<input id="CheckCode" name="CheckCode" placeholder="输入右侧验证码" type="text" value="" ng-model="userYzm" required>
+										<div class="con_yzm">
+											<a href="javascript:;">
+												<img width="100" height="30" src="assets/img/find/test/{{yzm}}.jpg" style="cursor:pointer" ng-click="change()">
+											</a>
+										</div>
+										<div class="need">*</div>
+										<div class="wrong_tip" ng-show="findForm.CheckCode.$error.required">
+											<b>
+												<span class="field-validation-valid tipframe" data-valmsg-for="CheckCode" data-valmsg-replace="true">不能为空</span>
+											</b>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="btn">
+								<input type="button" value="去找回" ng-click="suit()" ng-disabled="findForm.Email.$pristine||findForm.Email.$dirty && findForm.Email.$invalid||findForm.CheckCode.$pristine||findForm.CheckCode.$dirty && findForm.CheckCode.$invalid">
+							</div>
+						</form>
+					</div>
+					<div class="notice">
+						如在找回账号过程中遇到问题，可联系QQ：3148992939
+					</div>
+					<div class="back_login">
+						<a href="login.html">返回登录</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="foot">
+		Copyright © 福州靠谱网络有限公司 All rights reserved.
+	</div>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="assets/js/find.js"></script>
+</body>
+</html>

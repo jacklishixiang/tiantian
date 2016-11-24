@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>安卓模拟器靠谱助手</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/news.css">
+</head>
+<body>
+	<div class="bodyBg" ng-app="newapp">
+		<!-- 头部方案图 -->
+		<div class="headBg">
+			<div class="headCon">
+				<!-- 头部导航栏 -->
+				<nav class="headNav">
+					<div class="container">
+						<img src="assets/img/kpzs.png" alt="logo">
+						<ul>
+							<li><a href="kpzs.html">首页</a></li>
+							<li><a href="#">应用中心</a></li>
+							<li class="active"><a href="#">资讯中心</a></li>
+							<li><a href="#">靠谱社区</a></li>
+							<li><a href="">充值</a></li>
+							<li><a href="">用户帮助</a></li>
+							<li><a href="login.html">用户登录</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- 咨询中心 -->
+				<div class="relative">
+					<div class="circle" id="ico">
+						<span class="ico"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 方案图end -->
+		<!-- 资讯展示栏 -->
+		<div class="newsCon">
+			<div class="newsTitle clearfix">
+				<h2>请务必 在本站下载安卓版数据才能互通电脑.手机同步玩！</h2>
+				<div class="appDown">
+					<a href="">
+						<span>V5.5正式版</span>
+						<i>30.7MB（自动检测配置）</i>
+					</a>
+				</div>
+			</div>
+			<div class="content clearfix">
+				<!-- 左半部分 -->
+				<div class="conLeft" ng-controller="newsTxt">
+					<div class="nav">
+						<a href="">靠谱助手</a>
+						<span>></span>
+						<a href="">安卓游戏资讯</a>
+					</div>
+					<div class="newsBar" ng-repeat="items in tasks">
+						<a href="/news/9612.html" class="adv_news" title="《不良人2》开服嘉年华介绍"><img src="{{items.imgSrc}}" width="120" height="72"></a>
+						<div class="newsTxt">
+							<a href="/news/9614.html" target="_blank">{{items.title}}</a>
+							<p class="left_Txt1">{{items.Txt}}</p>
+							<p class="left_Date">更新时间：2016-11-08<span class="classify">分类：<span class="wendao">不良人2（靠谱官方）</span></span></p>
+						</div>
+					</div>
+					<div class="pages">
+						<a href="javascript:;" ng-click="preClick()">上一页</a>
+						<a href="javascript:;" ng-click="nextClick()">下一页</a>
+					</div>
+				</div>
+				<!-- 右半部分 -->
+				<div class="conRight">
+					<!-- 浏览资讯 -->
+					<div class="surf clearfix">
+						<div class="tab">
+							<ul>
+								<li class="active">最新更新</li>
+								<li>热门浏览</li>
+							</ul>
+						</div>
+						<div class="surfList" ng-controller="surf">
+							<ul>
+								<li ng-repeat="items in tasks">
+									<a href="">{{items.txt}}</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 点击下载rank排行榜 -->
+					<div class="rank">
+						<div class="linkApp clearfix" ng-controller="rank">
+							<h3>电脑排行下载</h3>
+							<span class="dw">下载量</span>
+							<div class="clearfix"></div>
+							<ul class="disCon">
+								<li class="clearfix" ng-repeat="items in tasks">
+									<span class="num">{{items.num}}</span>
+									<a href="">
+										<img src="{{items.imgSrc}}" alt="">
+										<span>{{items.name}}</span>
+									</a>
+									<div class="downClick">
+										<span>{{items.click}}</span>
+										<a href="/Apps/GetDownload/6724">下载</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divice">
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="footer">
+		<ul class="weibo clearfix">
+			<li class="WXbox" id="WXbox">
+				<a class="WX" href="javascript:;">微信</a>
+			</li>
+			<li>
+				<a class="SINA" href="http://weibo.com/u/3745998862" target="_blank" rel="nofollow">新浪微博</a>
+			</li>
+		</ul>
+		<div class="footerBottom clearfix">
+			<p>健康忠告：抵制不良游戏，拒绝盗版游戏.注意自我保护，谨防受骗上当.适度游戏益脑，沉迷游戏伤身.合理安排时间，享受健康生活.</p>
+			<ul class="footerUl clearfix">
+				<li>
+					<a href="http://www.kpzs.com/help/aboutus" target="_blank" rel="nofollow">关于靠谱助手</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="http://www.kpzs.com/help/linkus" target="_blank" rel="nofollow">联系我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="http://www.kpzs.com/help/friendlink" target="_blank" rel="nofollow">友情链接</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="http://www.kpzs.com/jianhu/index.html" target="_blank" rel="nofollow">家长监护</a>
+				</li>
+			</ul>
+			<p>
+				<a href="http://www.miitbeian.gov.cn" target="_blank" style="color: #808080;">闽ICP备13020497号-3</a>&nbsp;&nbsp;&nbsp;
+				<a href="/help/licensezz" target="_blank" style="color: #808080;">增值电信业务经营许可证闽B2-20150027</a>&nbsp;&nbsp;&nbsp;
+				<a href="/help/licenseww" target="_blank" style="color: #808080;">网络文化经营许可证闽网文(2015)1638-025号</a>
+				<br>
+				Copyright © 福州靠谱网络有限公司 All rights reserved.
+			</p>
+		</div>
+		<div style="text-align: center; margin: 10px 0;">
+			<span>
+				<a key="5403ff03efbfb0228dd588d8" logo_size="124x47" logo_type="realname" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.kpzs.com&amp;at=realname" target="_blank">
+					<img src="assets/img/footer/safe.png" alt="安全联盟认证" width="124" height="47" style="border: none;">
+				</a>
+			</span>
+			<span style="padding-left: 20px">
+				<a href="http://wj.fz12315.gov.cn/ei/Ei!certificate.action?id=297ee188557d65c7015590b980b600ad" target="_blank" style="border:0;"><img src="http://wj.fz12315.gov.cn/ei/Ei!readEiImgByMemory.action" style="border:0;"></a>
+			</span>
+		</div>
+	</div>
+	<!-- 二维码跟随栏 -->
+	<i class="poke"></i>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="assets/js/newapp.js"></script>
+	<script src="assets/js/new.js"></script>
+</body>
+</html>

@@ -1,0 +1,708 @@
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+big,
+em,
+font,
+img,
+strong,
+tt,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	padding: 0;
+	margin: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 12px
+}
+
+ol,
+ul,
+li {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-size: 12px;
+	background: none;
+	/*overflow: hidden;*/
+	font-family: "Microsoft YaHei", "Simsun", Arial
+}
+
+body,
+html {
+	height: 100%
+}
+
+td {
+	font-size: 12px;
+	line-height: 160%
+}
+a
+{
+	text-decoration: none;
+}
+a:hover
+{
+	text-decoration: none;
+}
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	width: auto !important;
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	outline: none !important
+}
+
+.hide {
+	display: none
+}
+
+a {
+	outline: none;
+	text-decoration: none
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table
+}
+
+.clearfix:after {
+	clear: both
+}
+
+*.clearfix {
+	zoom: 1
+}
+
+.fleft {
+	float: left
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px
+}
+
+::-webkit-scrollbar-track {
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.6)
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 0, 0, 0.7)
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(231, 231, 231, 0.4)
+}
+
+.hide {
+	display: none
+}
+/*导航开始*/
+.topNav {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5) !important;
+	-pie-background: rgba(0, 0, 0, 0.5) !important;
+	behavior: url(PIE.htc);
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+.main {
+	position:relative;
+}
+.nasd
+{
+	width: 100%;
+}
+.xiala
+{
+	margin-top: 20px;
+	margin-right: -16px;
+}
+.main .logo {
+	width: 140px;
+	height: 70px;
+	float: left;
+	display: block;
+	line-height: 70px;
+	margin-left: 5px;
+}
+
+.nav {
+	float: right;
+	position: relative;
+}
+
+.nav a {
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	font-family: "微软雅黑";
+	height: 70px;
+	line-height: 70px;
+	padding: 0 16px;
+}
+
+.nav a:hover {
+	color: #fff;
+	background-color: #00b7ff;
+}
+
+.nav ul {
+	width: 102px;
+	position: absolute;
+	top: 65px;
+	right: 0;
+	text-align: center;
+}
+
+.nav ul li {
+	float: left;
+	list-style: none;
+}
+
+.mainPopMenu {
+	display: none;
+}
+
+.mainPopMenu li a {
+	width: 102px;
+	height: 50px;
+	background-color: #00b7ff;
+	overflow: hidden;
+	line-height: 50px;
+	font-size: 14px;
+	color: #00577c;
+	display: block;
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+
+.qu {
+	width: 102px;
+	color: #00577c;
+	background-color: #00b7ff;
+}
+
+.mainPopMenu li a:hover {
+	color: #fff;
+}
+
+/*导航结束*/
+
+/*手机端下拉菜单*/
+
+.collapse .uls
+{
+	width: 100%;
+	list-style: none;
+}
+.collapse .uls li
+{
+	width: 100%;
+	display: block;
+}
+.collapse .uls li a
+{
+	width: 100%;
+	display: block;
+	height: 20%;
+	background-color: #fff;
+	font-size:14px;
+	font-family: "微软雅黑";
+	line-height: 30px;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	border-radius:15px;
+	text-align: center;
+	font-weight: bold;
+	color: #000;
+}
+
+.two_s
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.two_s .android_main
+{
+	width: 100%;
+	background-image: url(../img/fengwo/bg_android_01.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 1101px;
+	overflow: hidden;
+}
+.bs
+{
+	width: 100%;
+}
+.bs h1
+{
+	text-align: center;
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
+    padding: 100px 0 25px 0px;
+}
+.bs h2
+{
+	text-indent: 2em;
+    color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+    width: 69%;
+    margin: 0 auto;
+    line-height: 35px;
+}
+		
+.floatDown
+{
+	width: 191px;
+    height: 117px;
+    padding-top: 60px;
+    margin: 10px auto 0;
+    display: block;
+    background:url(../img/fengwo/bkq.png) no-repeat;
+}
+.floatDown a
+{
+	width: 191px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    text-align: center;
+    color: #e76f03;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+}
+.focusWrap
+{
+	width: 649px;
+	margin: 20px auto 0;
+}
+.focusBg
+{
+	width: 649px;
+	height: 453px;
+	background-image: url(../img/fengwo/conm.png);
+	background-repeat: no-repeat;
+	position: relative;
+	padding-top: 21px;
+}
+.focusLink
+{
+	width: 100%;
+	height: 105px;
+	text-align: center;
+	margin-top: 200px;
+}
+.focusLink a
+{
+	padding: 0 16px;
+	color: #ababab;
+	font-size: 14px;
+	float: left;
+	display: inline-block;
+	outline: none;
+	font-family:  "微软雅黑";
+	text-decoration: none;
+}
+.focusLink a.ttmnqLink i
+{
+	display: inline-block;
+	width: 55px;
+	height: 66px;
+	background-image: url(../img/fengwo/span.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+/*.focusLink a.ttmnqLink:hover i
+{
+	background-position: -55px 0;
+	animation: a 0.3s linear forwards;
+}*/
+.focusLink a:hover
+{
+	color: #0084d9;
+}
+@keyframes a{
+	0%{
+		transform: scale(0.8);
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		-ms-transform: scale(0.8);
+		-o-transform: scale(0.8);
+	}
+	100%{
+		transform: scale(1);
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}
+.focusLink a span
+{
+	padding: 10px 0;
+	display: block;
+}
+
+.focusLink a.sinazsLink i
+{
+	display: inline-block;
+	width: 71px;
+	height: 66px;
+	background-image: url(../img/fengwo/span.png);
+	background-repeat: no-repeat;
+	background-position:-111px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+.focusLink a.kpzsLink i
+{
+	display: inline-block;
+	width: 72px;
+	height: 63px;
+	background-image: url(../img/fengwo/span.png);
+	background-repeat: no-repeat;
+	background-position:-253px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+.focusLink a.xyandroidLink i
+{
+	display: inline-block;
+	width: 70px;
+	height: 72px;
+	background-image: url(../img/fengwo/span.png);
+	background-repeat: no-repeat;
+	background-position:-397px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+.focusLink a span.sp
+{
+	margin-top: 2px;
+}
+.focusLink a span.xl
+{
+	margin-top: -7px;
+}
+.focusLink a span.ys
+{
+	margin-top: -2px;
+}
+.focusLink a span.hma
+{
+	margin-top: -9px;
+}
+.focusLink a.ysLink i
+{
+	display: inline-block;
+	width: 59px;
+	height: 66px;
+	background-image: url(../img/fengwo/span.png);
+	background-repeat: no-repeat;
+	background-position:-537px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+.focusLink a.hmwLink i
+{
+	display: inline-block;
+	width: 70px;
+	height: 72px;
+	background-image: url(../img/fengwo/span.png);
+	background-repeat: no-repeat;
+	background-position:-655px 0;
+	transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-o-transform: scale(0.8);
+}
+
+
+/*轮播图设置*/
+.focus
+{
+	width: 448px;
+	height: 258px;
+	margin: 12px 0 0 38px;
+	overflow: hidden;
+	position: relative;
+}
+.focus ul
+{
+	position: absolute;
+	top: 0;
+}
+.focus ul li
+{
+	float: left;
+	width: 448px;
+	height: 258px;
+	position: relative;
+	margin: 0 auto;
+}
+.focus ul li img
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+/*on的设置*/
+/*第一个轮播图on*/
+		.focusLink a.on i
+		{
+			transform: scale(1);
+			-webkit-transform: scale(1);
+			-moz-transform: scale(1);
+			-ms-transform: scale(1);
+			-o-transform: scale(1);
+			animation: a 0.3s linear forwards;
+		}
+		.focusLink a.on
+		{
+			color: #0084d9;
+		}
+/*第一个轮播图on*/	
+		.focusLink a.ttmnqLink.on i
+		{
+			background-position: -55px 0;
+		}
+		.focusLink a.sinazsLink.on i
+		{
+			background-position: -182px 0;
+		}
+		.focusLink a.kpzsLink.on i
+		{
+			background-position: -325px 0;
+		}
+		.focusLink a.xyandroidLink.on i
+		{
+			background-position: -467px 0;
+		}
+		.focusLink a.ysLink.on i
+		{
+			background-position: -596px 0;
+		}
+		.focusLink a.hmwLink.on i
+		{
+			background-position: -725px 0;
+		}
+/*on的设置*/
+
+/*轮播图设置*/
+
+
+.android_btm_1
+{
+	position: relative;
+	top: 300px;
+	background-image: url(../img/fengwo/Z.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 1405px;
+}
+.android_btm_1 h2
+{
+	text-align: center;
+    color: #fff600;
+    font-size: 48px;
+    font-weight: bold;
+}
+.android_btm_1 .bg_step_01
+{
+	
+    width: 802px;
+    height: 653px;
+    margin: 0 auto 17px auto;
+}
+.android_btm_1 .bg_step_01 img
+{
+	width: 100%;
+}
+.android_btm_1 .bg_step_02
+{
+	width: 904px;
+	height: 656px;
+	margin: 0 auto;
+}
+.android_btm_1 .bg_step_02 img
+{
+	width: 100%;
+}
+
+.android_btm_2
+{
+	position: relative;
+	background-image: url(../img/fengwo/2Q==.jpg);
+	background-repeat:no-repeat ;
+	background-position:center top;
+    height: 1379px;
+    top: 300px;
+}
+.bg_step_03
+{
+	width: 880px;
+    height: 592px;
+    margin: 0 auto 14px auto;
+}
+.bg_step_03 img
+{
+	width: 100%;
+}
+.bg_step_04
+{
+	width: 749px;
+    height: 696px;
+    margin: 0 auto;
+}
+.bg_step_04 img
+{
+	width: 100%;
+}
+
+
+.footer
+{
+	padding: 0 0 20px;
+    width: 100%;
+    position: relative;
+    top: 300px;
+    background: #fff;
+    text-align: center;
+}
+.footer p
+{
+	padding: 20px 0 0;
+    color: #666666;
+    font-size: 13px;
+    font-style: normal;
+}
+.footer p a
+{
+	padding: 0 10px;
+    color: #666;
+}
+
+
+.bak
+{
+	margin-top: 17%;
+}
+
+.item img
+{
+	margin: 0 auto;
+}

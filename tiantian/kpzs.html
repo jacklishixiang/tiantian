@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>安卓模拟器靠谱助手</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="assets/css/common.css">
+	<link rel="stylesheet" href="assets/css/kpzs.css">
+</head>
+<body ng-app="kpapp">
+	<!-- 头部方案图 -->
+	<div class="headBg">
+		<div class="headCon">
+			<!-- 头部导航栏 -->
+			<nav class="headNav">
+				<div class="container">
+					<img src="assets/img/kpzs.png" alt="logo">
+					<ul>
+						<li class="active"><a href="kpzs.html">首页</a></li>
+						<li><a href="#">应用中心</a></li>
+						<li><a href="news.html">资讯中心</a></li>
+						<li><a href="#">靠谱社区</a></li>
+						<li><a href="">充值</a></li>
+						<li><a href="">用户帮助</a></li>
+						<li><a href="login.html">用户登录</a></li>
+					</ul>
+				</div>
+			</nav>
+			<!-- 切换图 -->
+			<div class="and clearfix">
+				<div class="andTop">
+				</div>
+				<div class="andTopLeft" id="andLeft">
+				</div>
+				<div class="andTopRight" id="andRight">
+				</div>
+				<div class="disApk clearfix" id="disApk" style="display: none;">
+					<div class="inner">
+						<div class="downApkLink">
+							<a href="http://down.kaopu001.com/kpzssj/Kaopu.android.apk"></a>版本：V2.2.7&nbsp;&nbsp;&nbsp;更新：2015-04-16
+						</div>
+						<div class="downAPKewm">
+							<img src="assets/img/conBtn/kpQrcode.png" width="93" height="93">
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 切换状态按钮 -->
+			<div class="conBottom">
+				<ul class="clearfix">
+					<li class="webAct" id="web"></li>
+					<li class="andr" id="andr"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 方案图end -->
+	<!-- app展示栏 -->
+	<div class="appDis">
+		<div class="container clearfix">
+			<!-- 左侧rank排行表 -->
+			<div class="appLeft"  ng-controller="appRank">
+				<div class="linkApp">
+					<h3>电脑排行下载</h3>
+					<span>下载量</span>
+					<div class="clearfix"></div>
+					<ul class="disCon">
+						<li class="clearfix" ng-repeat="items in tasks">
+							<span class="num" ng-bind="items.num"></span>
+							<a href="">
+								<img src="{{items.imgSrc}}" alt="">
+								<span>{{items.name}}</span>
+							</a>
+							<div class="disDown">
+								<span>{{items.click}}</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 右侧精选游戏 -->
+			<div class="appRight">
+				<div class="linkGame">
+					<h3>精选游戏</h3>
+					<span><a href="">更多>></a></span>
+				</div>
+				<ul class="clearfix" ng-controller="linkGame">
+					<li ng-repeat="items in tasks" ng-class="{'noSpace':items.num%3==0}">
+						<a href=""><img src="{{items.imgSrc}}" alt=""></a>
+						<div class="detail">
+							<p><a href="" class="gameName">{{items.name}}</a></p>
+							<div>
+								下载量：
+								<span class="gray">{{items.click}}</span>
+							</div>
+							<a href="" class="down">apk包</a><a href="" class="down">电脑版</a>
+						</div>
+					</li>
+				</ul>
+				<!-- 精选应用 -->
+				<div class="linkGame">
+					<h3>精选应用</h3>
+					<span><a href="">更多>></a></span>
+				</div>
+				<ul class="clearfix" ng-controller="linkApp">
+					<li ng-repeat="items in tasks" ng-class="{'noSpace':items.num%3==0}">
+						<a href=""><img src="{{items.imgSrc}}" alt=""></a>
+						<div class="detail">
+							<p><a href="" class="gameName">{{items.name}}</a></p>
+							<div>
+								下载量：
+								<span class="gray">{{items.click}}</span>
+							</div>
+							<a href="" class="down">apk包</a><a href="" class="down">电脑版</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- app展示栏 end -->
+	<div class="divice">
+	</div>
+	<div class="newInfoBg">
+		<div class="newInfo">
+			<div class="info">
+				<h2 class="kp_about">关于靠谱助手</h2>
+				<div class="kp_cnt">
+					<p>靠谱助手是靠谱娱乐于2013年5月18日推出的一款专为第三方智能安卓模拟器提供管理的免费应用程序，完美实现用户在电脑上安装、运行安卓游戏与应用，支持多模拟器管理，承载天天模拟器与bluestacks模拟器，是国内最稳定的安卓模拟器管理软件。</p>
+					<p>靠谱助手应用中心提供海量免费资源，为您提供更加安全便捷的下载安装渠道，省去了您上网搜索下载的步骤，是您电脑运行手机应用的完美助手。</p>
+				</div>
+				<h2 class="kp_fun">功能介绍</h2>
+				<div class="kp_cnt">
+					<p>1.完美兼容各种安卓手游与应用，游戏、聊天两不误；</p>
+					<p>2.第一时间上架热门手游大作，最新最酷的游戏全都有；</p>
+					<p>3.提供游戏视频录制功能，让您在游戏的同时记录下自己精彩时刻；</p>
+					<p>4.支持本地安装应用，更有二维码扫描下载，不用随身携带数据线；</p>
+					<p>5.按键DIY，自由设置键盘按键进行模拟点击，想怎么玩就怎么玩；</p>
+					<p>6.手柄模式，使用手柄玩格斗手游，妈妈再也不用担心我被KO了；</p>
+					<p>7.GPS模拟定位，想去哪“就去哪”；</p>
+				</div>
+			</div>
+			<div class="new" ng-controller="new">
+				<h2 class="newTitle">热点资讯
+					<a href="">更多</a></h2>
+					<div class="newsBar" ng-repeat="items in tasks">
+						<a href="/news/9612.html" class="adv_news" title="《不良人2》开服嘉年华介绍"><img src="{{items.imgSrc}}" width="120" height="72"></a>
+						<dl>
+							<dt><a href="/news/9612.html" target="_blank" title="{{items.title}}">{{items.title}}</a></dt>
+							<dd>{{items.arti}}</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 -->
+		<div class="footer">
+			<ul class="weibo clearfix">
+				<li class="WXbox" id="WXbox">
+					<a class="WX" href="javascript:;">微信</a>
+				</li>
+				<li>
+					<a class="SINA" href="http://weibo.com/u/3745998862" target="_blank" rel="nofollow">新浪微博</a>
+				</li>
+			</ul>
+			<ul class="footerLink clearfix">
+				<li>
+					<a href="http://www.liulanqi.net/" title="浏览器下载" target="_blank">浏览器下载</a>
+				</li>
+				<li>
+					<a href="http://xlfans.com" title="迅雷会员" target="_blank">迅雷会员</a>
+				</li>
+				<li>
+					<a href="http://danji.haidaozhu.com/" title="单机游戏下载" target="_blank">单机游戏下载</a>
+				</li>
+				<li>
+					<a href="http://www.285868.com" title="系统圣地" target="_blank">系统圣地</a>
+				</li>
+				<li>
+					<a href="http://www.buscx.cn/" title="手机应用" target="_blank">手机应用</a>
+				</li>
+				<li>
+					<a href="http://www.jisuxia.com" title="极速下载" target="_blank">极速下载</a>
+				</li>
+				<li>
+					<a href="http://www.youdaili.net" title="http代理" target="_blank">http代理</a>
+				</li>
+				<li>
+					<a href="http://www.45575.com/" title="连连看小游戏大全" target="_blank">连连看小游戏大全</a>
+				</li>
+				<li>
+					<a href="http://sq.kpzs.com/" title="石器时代之疯狂原始人" target="_blank">石器时代之疯狂原始人</a>
+				</li>
+				<li>
+					<a href="http://www.kpzs.com/topic/jxsjtg" title="剑侠世界手游电脑版" target="_blank">剑侠世界手游电脑版</a>
+				</li>
+				<li>
+					<a href="http://fahao.xiaopi.com/" title="手机游戏礼包" target="_blank">手机游戏礼包</a>
+				</li>
+				<li>
+					<a href="http://www.2265.com/" title="安卓游戏下载" target="_blank">安卓游戏下载</a>
+				</li>
+				<li>
+					<a href="http://www.pingyou.cc/" title="棋牌游戏" target="_blank">棋牌游戏</a>
+				</li>
+				<li>
+					<a href="http://www.azsyw.com/" title="安卓手游网" target="_blank">安卓手游网</a>
+				</li>
+				<li>
+					<a href="http://www.vqs.com/" title="破解游戏" target="_blank">破解游戏</a>
+				</li>
+				<li>
+					<a href="http://www.waig8.com/" title="西西软件园" target="_blank">西西软件园</a>
+				</li>
+				<li>
+					<a href="http://www.tvhuan.com/" title="智能电视软件" target="_blank">智能电视软件</a>
+				</li>
+				<li>
+					<a href="http://www.zwcad.com/" title="CAD" target="_blank">CAD</a>
+				</li>
+				<li>
+					<a href="http://www.3322.cc/" title="3322软件下载站" target="_blank">3322软件下载站</a>
+				</li>
+				<li>
+					<a href="http://m.ali213.net/" title="手机游戏下载" target="_blank">手机游戏下载</a>
+				</li>
+				<li>
+					<a href="http://mc.ahgame.com/" title="我的世界" target="_blank">我的世界</a>
+				</li>
+				<li>
+					<a href="http://www.fixdown.com/" title="软件下载" target="_blank">软件下载</a>
+				</li>
+				<li>
+					<a href="http://www.gamechinaz.cn/" title="单机游戏" target="_blank">单机游戏</a>
+				</li>
+				<li>
+					<a href=" http://blzz.gao7.com/" title="部落冲突" target="_blank">部落冲突</a>
+				</li>
+				<li>
+					<a href="http://www.391k.com/" title="单机游戏推荐" target="_blank">单机游戏推荐</a>
+				</li>
+				<li>
+					<a href="http://www.apppark.cn/" title="app开发" target="_blank">app开发</a>
+				</li>
+				<li>
+					<a href="http://www.guopan.cn/" title="好玩的手机游戏" target="_blank">好玩的手机游戏</a>
+				</li>
+				<li>
+					<a href="http://www.lezhuan.com/" title="快乐赚" target="_blank">快乐赚</a>
+				</li>
+				<li>
+					<a href="http://www.pk995.com/" title="永恒狂刀" target="_blank">永恒狂刀</a>
+				</li>
+				<li>
+					<a href="http://huoying.hanhande.com/" title="火影忍者" target="_blank">火影忍者</a>
+				</li>
+				<li>
+					<a href="http://www.8868.cn/" title="手游交易平台" target="_blank">手游交易平台</a>
+				</li>
+				<li>
+					<a href="http://www.youzhuan.com/" title="游戏赚钱" target="_blank">游戏赚钱</a>
+				</li>
+				<li>
+					<a href="http://lol.51saier.cn/" title="lol幸运召唤师" target="_blank">lol幸运召唤师</a>
+				</li>
+				<li>
+					<a href="http://lol.te5.com/" title="LOL" target="_blank">LOL</a>
+				</li>
+				<li>
+					<a href="http://www.357.com/" title="手机游戏" target="_blank">手机游戏</a>
+				</li>
+				<li>
+					<a href="http://www.diyiyou.com/" title="手游排行榜" target="_blank">手游排行榜</a>
+				</li>
+				<li>
+					<a href="http://www.duote.com/android/" title="安卓软件下载" target="_blank">安卓软件下载</a>
+				</li>
+				<li>
+					<a href="http://www.xitongbuluo.com/" title="系统部落" target="_blank">系统部落</a>
+				</li>
+				<li>
+					<a href="http://www.uminsky.com/" title="游民星空下载站" target="_blank">游民星空下载站</a>
+				</li>
+				<li>
+					<a href="https://www.ttz.com/" title="玩游戏赚钱" target="_blank">玩游戏赚钱</a>
+				</li>
+				<li>
+					<a href="http://www.tvapk.com/" title="机顶盒软件下载" target="_blank">机顶盒软件下载</a>
+				</li>
+				<li>
+					<a href="http://www.pmdown.com/" title="拼命下载站" target="_blank">拼命下载站</a>
+				</li>
+				<li>
+					<a href="http://www.9553.com/article/" title="游戏攻略大全" target="_blank">游戏攻略大全</a>
+				</li>
+				<li>
+					<a href="http://sy.kuaiyong.com/" title="快用游戏中心" target="_blank">快用游戏中心</a>
+				</li>
+				<li>
+					<a href="http://www.lenosoft.net/" title="仓库管理软件" target="_blank">仓库管理软件</a>
+				</li>
+				<li>
+					<a href="http://www.nxnba.com/ " title="NBA2K" target="_blank">NBA2K</a>
+				</li>
+				<li>
+					<a href="http://d.gao7.com/" title="手机游戏下载" target="_blank">手机游戏下载</a>
+				</li>
+				<li>
+					<a href="http://v.kaopu001.com/" title="手游视频" target="_blank">手游视频</a>
+				</li>
+				<li>
+					<a href="http://www.16163.com" title="16163网易游戏" target="_blank">16163网易游戏</a>
+				</li>
+				<li>
+					<a href="http://www.ttmnq.com/" title="天天安卓模拟器" target="_blank">天天安卓模拟器</a>
+				</li>
+				<li>
+					<a href="http://www.bigbaicai.com/" title="U盘启动" target="_blank">U盘启动</a>
+				</li>
+				<li>
+					<a href="http://www.udangjia.com" title="U盘启动盘制作工具" target="_blank">U盘启动盘制作工具</a>
+				</li>
+				<li>
+					<a href="http://www.qianzhan.com/game/" title="前瞻游戏" target="_blank">前瞻游戏</a>
+				</li>
+				<li>
+					<a href="http://www.huaweirom.com/" title="华为官方" target="_blank">华为官方</a>
+				</li>
+				<li>
+					<a href="http://bbs.leyoo.com/" title="免费的网游" target="_blank">免费的网游</a>
+				</li>
+				<li>
+					<a href="http://bbs.shafa.com/" title="电视应用市场" target="_blank">电视应用市场</a>
+				</li>
+				<li>
+					<a href="http://zt.jdyou.com/" title="游戏辅助" target="_blank">游戏辅助</a>
+				</li>
+				<li>
+					<a href="http://www.kaopu001.com/" title="安卓模拟器" target="_blank">安卓模拟器</a>
+				</li>
+				<li>
+					<a href="http://www.a9vg.com/" title="A9VG" target="_blank">A9VG</a>
+				</li>
+				<li>
+					<a href="http://www.hao76.com" title="好玩的手机网游" target="_blank">好玩的手机网游</a>
+				</li>
+				<li>&nbsp;</li>
+			</ul>
+			<div class="footerBottom clearfix">
+				<p>健康忠告：抵制不良游戏，拒绝盗版游戏.注意自我保护，谨防受骗上当.适度游戏益脑，沉迷游戏伤身.合理安排时间，享受健康生活.</p>
+				<ul class="footerUl clearfix">
+					<li>
+						<a href="http://www.kpzs.com/help/aboutus" target="_blank" rel="nofollow">关于靠谱助手</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="http://www.kpzs.com/help/linkus" target="_blank" rel="nofollow">联系我们</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="http://www.kpzs.com/help/friendlink" target="_blank" rel="nofollow">友情链接</a>
+					</li>
+					<li>|</li>
+					<li>
+						<a href="http://www.kpzs.com/jianhu/index.html" target="_blank" rel="nofollow">家长监护</a>
+					</li>
+				</ul>
+				<p>
+					<a href="http://www.miitbeian.gov.cn" target="_blank" style="color: #808080;">闽ICP备13020497号-3</a>&nbsp;&nbsp;&nbsp;
+					<a href="/help/licensezz" target="_blank" style="color: #808080;">增值电信业务经营许可证闽B2-20150027</a>&nbsp;&nbsp;&nbsp;
+					<a href="/help/licenseww" target="_blank" style="color: #808080;">网络文化经营许可证闽网文(2015)1638-025号</a>
+					<br>
+					Copyright © 福州靠谱网络有限公司 All rights reserved.
+				</p>
+			</div>
+			<div style="text-align: center; margin: 10px 0;">
+				<span>
+					<a key="5403ff03efbfb0228dd588d8" logo_size="124x47" logo_type="realname" href="http://v.pinpaibao.com.cn/authenticate/cert/?site=www.kpzs.com&amp;at=realname" target="_blank">
+						<img src="assets/img/footer/safe.png" alt="安全联盟认证" width="124" height="47" style="border: none;">
+					</a>
+				</span>
+				<span style="padding-left: 20px">
+					<a href="http://wj.fz12315.gov.cn/ei/Ei!certificate.action?id=297ee188557d65c7015590b980b600ad" target="_blank" style="border:0;"><img src="http://wj.fz12315.gov.cn/ei/Ei!readEiImgByMemory.action" style="border:0;"></a>
+				</span>
+			</div>
+		</div>
+		<!-- 二维码跟随栏 -->
+		<i class="poke"></i>
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="assets/js/kpzs.js"></script>
+		<script src="assets/js/kpapp.js"></script>
+	</body>
+	</html>

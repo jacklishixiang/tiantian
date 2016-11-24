@@ -1,0 +1,21 @@
+$(function()
+{
+	$(".nav>a").eq(6).hover(function()
+	{
+		$(this).addClass("qu");
+		$(".mainPopMenu").css("display","block");
+	},function()
+	{
+		$(this).removeClass("qu");
+		$(".mainPopMenu").css("display","none");
+	})
+	$(".mainPopMenu").hover(function()
+	{
+		$(".nav>a").eq(6).addClass("qu");
+		$(this).css("display","block");
+	},function()
+	{
+		$(".nav>a").eq(6).removeClass("qu");
+		$(this).css("display","none");
+	})
+})

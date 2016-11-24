@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="assets/css/common.css" />
+	<link rel="stylesheet" href="assets/css/ttnews.css" />
+</head>
+<body ng-app="ttnewApp">
+	<div class="content">
+		<!--导航开始-->
+		<div class="head  clearfix">
+			<div class="logo">
+				<a href="#"><img src="assets/img/ttnews/logo.png"></a>
+			</div>
+			<div class="headTag headTag01 clearfix">
+				<a href="javascript:;" target="_blank" class="headTagBtn hide" id="headTagBtn">立即下载</a>
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="ttnews.html">最新资讯</a></li>
+					<li><a href="kpzs.html">应用中心</a></li>
+					<li><a href="#">交流论坛</a></li>
+					<li class="business OnlineQQ" >
+						<span class="businessSpan1">在线客服</span>
+						<div class="businessShow" style="display: none; z-index: 0; opacity: 0; right: -272px;">
+							<a href="#">QQ：800054015</a>
+						</div>
+					</li>
+					<li class="business logs" id="headTagIcon">
+						<span class="businessSpan1">商务合作</span>
+						<div class="businessShow" style="display: none; z-index: 0; opacity: 0; right: -272px;">
+							<p>联系人：叶女士</p>
+							<p>电话：13705970700</p>
+							<p>
+								<a href="#" target="_blank">QQ：2713271903</a>
+							</p>
+							<p>邮箱：yeshu@kaopu001.com</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--导航结束-->
+		<!-- 地址栏开始 -->
+		<div class="location">
+			<a href="/">首页</a>
+			<b>&gt;</b>
+			<a href="/news/">最新资讯</a>
+		</div>
+		<div class="List clearfix" ng-controller="ttnewCtrl">
+			<div class="leftBox">
+				<div class="bg">
+					<div class="display">
+						<h2>资讯列表</h2>
+						<div class="item" ng-repeat="items in tasks">
+							<div class="rtxt">
+								<div class="tips">
+									<span class="date">2016/11/4</span>
+									<a href="" class="artName">{{items.title}}</a>
+								</div>
+								<div class="artCon">
+									{{items.Txt}}
+								</div>
+							</div>
+							<img src="assets/img/ttnews/lDis/{{items.index}}.jpg" width="200" height="130" alt="">
+						</div>
+					</div>
+					<div class="page">
+						<a href="javascript:;" ng-click="preClick()" class="up">上一页</a>
+						<a href="javascript:;" ng-click="nextClick()" class="next">下一页</a> 
+					</div>
+				</div>
+			</div>
+			<div class="rightBox">
+				<div class="art">
+					<div class="bg"></div>
+					<dl>
+						<dt>最新发布</dt>
+						<dd>
+							<a href="/news/9602.html"><span>›</span>《宠物大乱斗》天天模拟器极速体验 </a>
+						</dd>
+						<dd>
+							<a href="/news/9596.html"><span>›</span>《不良人2》官方手游天天模拟器上线 </a>
+						</dd>
+						<dd>
+							<a href="/news/9544.html"><span>›</span>天天模拟器《不良人2》靠谱福利多 </a>
+						</dd>
+						<dd>
+							<a href="/news/9524.html"><span>›</span>天天模拟器推推直播 分享你的乐趣 </a>
+						</dd>
+						<dd>
+							<a href="/news/9512.html"><span>›</span>一键录制 天天模拟器插件功能 </a>
+						</dd>
+						<dd>
+							<a href="/news/9505.html"><span>›</span>献给《HIT:我守护的一切》迎首发登录必得6元代金券 </a>
+						</dd>
+					</dl>
+				</div>
+				<div class="art">
+					<div class="bg"></div>
+					<dl>
+						<dt>最热文章</dt>
+						<dd>
+							<a href="/news/1671.html"><span>›</span>天天安卓模拟器多开、双开详细图文教程 </a>
+						</dd>
+						<dd>
+							<a href="/news/1694.html"><span>›</span>win7/win8系统启动天天模拟器时卡在99%的解决办法 </a>
+						</dd>
+						<dd>
+							<a href="/news/1933.html"><span>›</span>天天模拟器最新版多开图文教程（天天模拟器双开多开） </a>
+						</dd>
+						<dd>
+							<a href="/news/1677.html"><span>›</span>VT检测工具以及如何在BIOS中开启VT（CPU虚拟化） </a>
+						</dd>
+						<dd>
+							<a href="/news/1720.html"><span>›</span>如何让天天模拟器运行起来更快一点？ </a>
+						</dd>
+						<dd>
+							<a href="/news/1676.html"><span>›</span>如何将天天模拟器设置为双核运行 </a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="footer clearfix">
+			<p class="text">
+				版权所有 ©<a href="http://www.ttmnq.com/">天天模拟器</a> <br>
+				闽ICP备13020497号-1
+			</p>
+			<div style="text-align: center; margin: 10px 0;">
+				<span>
+					<a key="55d3020aefbfb07874c86d39" logo_size="124x47" logo_type="realname" href="" rel="nofollow" target="_blank">
+						<img src="//static.anquan.org/static/outer/image/sm_124x47.png?id=www.ttmnq.com" alt="安全联盟认证" width="124" height="47" style="border: none;">
+					</a>
+				</span>
+				<span style="padding-left: 20px; padding-top: 10px">
+					<a href="" style="border:0;">
+						<img src="http://wj.fz12315.gov.cn/ei/Ei!readEiImgByMemory.action" style="border:0;">
+					</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js" ></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script type="text/javascript" src="assets/js/hend.js" ></script>
+	<script src="assets/js/ttnews.js"></script>
+</body>
+</html>

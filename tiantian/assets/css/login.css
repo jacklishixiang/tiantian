@@ -1,0 +1,227 @@
+body
+{
+    font-family: 微软雅黑;
+    font-size: 14px;
+
+    margin: 0;
+
+    text-align: center;
+
+    background: url('../img/login/bg.jpg') center top no-repeat #ebf4fd;
+}
+.bg .container
+{
+    width: 630px;
+    margin: 0 auto 0;
+    padding-top: 80px;
+}
+.logo
+{
+    margin: 0 0 20px;
+
+    text-align: left;
+}
+.frame
+{
+    position: relative;
+
+    width: 630px;
+    padding: 40px 0 80px;
+
+    text-align: center;
+
+    border-radius: 10px;
+    background: url('../img/login/login_bg.png');
+}
+.frame .sign_up
+{
+    position: absolute;
+    z-index: 10;
+    top: 45px;
+    right: 100px;
+}
+.frame .sign_up a
+{
+    font-size: 14px;
+    line-height: 31px;
+
+    display: block;
+
+    width: 88px;
+    height: 31px;
+    padding: 0 0 0 44px;
+
+    text-align: left;
+    text-decoration: none;
+
+    color: #4089e1;
+    border-radius: 3px;
+    background: url('../img/login/reg_ico.png') 20px 8px no-repeat;
+}
+.frame .loginForm
+{
+    width: 394px;
+    margin: 0 auto;
+}
+.frame .loginForm .tab
+{
+    position: relative;
+
+    padding: 10px 0;
+}
+.frame .loginForm .tab ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.frame .loginForm .tab ul li
+{
+    font-size: 14px;
+
+    display: inline;
+    float: left;
+
+    height: 38px;
+    margin-right: 24px;
+    padding-right: 24px;
+}
+.frame .loginForm .tab ul li a
+{
+    font-size: 16px;
+
+    position: relative;
+
+    display: inline-block;
+
+    padding-bottom: 15px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #919191;
+}
+.frame .loginForm .tab ul li.active a
+{
+    color: #2084c2;
+    background: url('../img/login/tab_bottom_icon.png') no-repeat center bottom;
+}
+.frame .loginForm .login_box
+{
+    width: 394px;
+    margin: 0 0 5px;
+
+    border-radius: 3px;
+}
+.frame .loginForm .login_box li
+{
+    line-height: 50px;
+
+    float: left;
+
+    height: 50px;
+    margin: 5px 0;
+
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+.login_title
+{
+    font-size: 16px;
+
+    width: 99px;
+
+    text-align: right;
+
+    color: #888;
+    border-left: 1px solid #ccc;
+    border-radius: 2px 0 0 2px;
+}
+.login_input
+{
+    font-size: 16px;
+
+    position: relative;
+
+    width: 293px;
+
+    text-align: left;
+
+    border-right: 1px solid #ccc;
+    border-radius: 0 2px 2px 0;
+}
+.login_input input
+{
+    font-family: '微软雅黑';
+    font-size: 16px;
+    line-height: 46px;
+
+    width: 286px;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+
+    color: #888;
+    border: 0;
+    outline: none;
+}
+.forget
+{
+    position: relative;
+
+    height: 20px;
+    margin: 0 0 20px;
+
+    text-align: left;
+
+    color: #888;
+}
+.forget a
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    text-decoration: none;
+
+    color: #4089e1;
+}
+.loginBtn
+{
+    margin: 0 0 10px;
+}
+.loginBtn a
+{
+    font-size: 25px;
+    line-height: 55px;
+
+    display: block;
+
+    width: 394px;
+    height: 55px;
+
+    text-align: center;
+    text-decoration: none;
+
+    color: #fff;
+    border-radius: 3px;
+    background: #2084c2;
+}
+.loginBtn a:hover
+{
+    background: #3397d5;
+}
+
+.bg .foot
+{
+    font-size: 14px;
+    line-height: 30px;
+
+    padding: 50px 0;
+
+    text-align: center;
+
+    color: #6e91ae;
+}

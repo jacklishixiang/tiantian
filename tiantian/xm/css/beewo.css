@@ -1,0 +1,832 @@
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+big,
+em,
+font,
+img,
+strong,
+tt,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	padding: 0;
+	margin: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 12px
+}
+
+ol,
+ul,
+li {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%
+}
+
+body {
+	min-width: 1000px;
+	margin: 0 auto;
+	font-size: 12px;
+	background: none;
+	font-family: "Microsoft YaHei", "Simsun", Arial
+}
+
+body,
+html {
+	height: 100%
+}
+
+td {
+	font-size: 12px;
+	line-height: 160%
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	width: auto !important;
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	outline: none !important
+}
+
+.hide {
+	display: none
+}
+
+a {
+	outline: none;
+	text-decoration: none
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table
+}
+
+.clearfix:after {
+	clear: both
+}
+
+*.clearfix {
+	zoom: 1
+}
+
+.fleft {
+	float: left
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px
+}
+
+::-webkit-scrollbar-track {
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.6)
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 0, 0, 0.7)
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(231, 231, 231, 0.4)
+}
+
+.hide {
+	display: none
+}
+/*导航开始*/
+.topNav {
+	width: 100%;
+	height: 70px;
+	min-width: 1000px;
+	background: rgba(0, 0, 0, 0.5) !important;
+	-pie-background: rgba(0, 0, 0, 0.5) !important;
+	behavior: url(PIE.htc);
+	line-height: 70px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+.main {
+	width: 1204px;
+	min-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	line-height: 70px;
+}
+
+.main .logo {
+	width: 140px;
+	height: 50px;
+	float: left;
+	display: block;
+	line-height: 110px;
+}
+
+.nav {
+	float: right;
+	position: relative;
+}
+
+.nav a {
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	font-family: "微软雅黑";
+	height: 70px;
+	line-height: 70px;
+	padding: 0 16px;
+}
+
+.nav a:hover {
+	color: #fff;
+	background-color: #00b7ff;
+}
+
+.nav ul {
+	width: 102px;
+	position: absolute;
+	top: 65px;
+	right: 0;
+	text-align: center;
+}
+
+.nav ul li {
+	float: left;
+	list-style: none;
+}
+
+.mainPopMenu {
+	display: none;
+}
+
+.mainPopMenu li a {
+	width: 102px;
+	height: 35px;
+	padding: 10px 0;
+	background-color: #00b7ff;
+	overflow: hidden;
+	line-height: 35px;
+	font-size: 14px;
+	color: #00577c;
+	display: block;
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+
+.qu {
+	width: 70px;
+	height: 70px;
+	color: #00577c;
+	background-color: #00b7ff;
+}
+
+.mainPopMenu li a:hover {
+	color: #fff;
+}
+
+/*导航结束*/
+
+/*第一块内容开始*/
+.info_main
+{
+	background-image: url(../img/beewo/bj.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 913px;
+	overflow: hidden;
+}
+.info_main .main
+{
+	position: relative;
+}
+.mains
+{
+	position: relative;
+	width: 1020px;
+	margin: 0 auto;
+}
+.info_main h1
+{
+	background: url(../img/beewo/bg_info_logo.png) no-repeat;
+    height: 101px;
+    width: 333px;
+    margin: 126px auto 0 auto;
+    line-height: 999px;
+    overflow: hidden;
+}
+.info_main h2
+{
+	color: #fff;
+    font-size: 24px;
+    font-weight: lighter;
+    text-indent: 2em;
+    padding-top: 45px;
+    line-height: 35px;
+    width: 1072px;
+    position: absolute;
+    z-index: 9;
+}
+
+.ele-waste
+{
+	pointer-events: auto;
+    width: 2000px;
+    height: 2000px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    margin-left: -1000px;
+    overflow: hidden;
+}
+
+.left_01
+{
+	background: url(../img/beewo/01.png) no-repeat;
+	width: 223px;
+	height: 245px;
+	position: absolute;
+	top: 260px;
+	z-index: 1;	
+}
+.lmg01
+{
+	left: 50%;
+	right: 50%;
+}
+.ele-waste .lmg01
+{
+	animation-delay: 0.1s;
+}
+.ele-waste .left_01
+{
+	animation-name:waste1;
+}
+.ele-waste .lmg01
+{
+	animation:waste1 3s cubic-bezier(0,0.21,0,0.47) infinite;
+}
+
+@keyframes waste1{
+	0%
+	{
+		opacity: 0;
+   		transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-webkit-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-moz-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-ms-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-o-transform: translateX(0) translateY(0px) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(-1000px) translateY(-100px) rotateZ(760deg);
+   		-webkit-transform: translateX(-1000px) translateY(-100px) rotateZ(760deg);
+   		-moz-transform: translateX(-1000px) translateY(-100px) rotateZ(760deg);
+   		-ms-transform: translateX(-1000px) translateY(-100px) rotateZ(760deg);
+   		-o-transform: translateX(-1000px) translateY(-100px) rotateZ(760deg)
+	}
+}
+
+
+
+.info_img
+{
+	width: 352px;
+	height: 461px;
+	position: absolute;
+	background-image: url(../img/beewo/cencer.png);
+	background-repeat: no-repeat;
+	top: 271px;
+	left: 50%;
+	margin-left: -176px;
+	z-index: 2;
+}
+
+.right_01
+{
+	background: url(../img/beewo/04.png) no-repeat;
+	width: 217px;
+	height: 184px;
+	position: absolute;
+	top: 300px;
+	z-index: 1;	
+}
+.lmg04
+{
+	left: 50%;
+	right: 50%;
+}
+.ele-waste .lmg04
+{
+	animation-delay: 0.5s;
+}
+.ele-waste .right_01
+{
+	animation-name:waste2;
+}
+.ele-waste .lmg04
+{
+	animation: waste2 4s cubic-bezier(0,0.21,0,0.47) infinite;
+}
+
+@keyframes waste2{
+	0%
+	{
+		opacity: 0;
+   		transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-webkit-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-moz-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-ms-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-o-transform: translateX(0) translateY(0px) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(1000px) translateY(-210px) rotateZ(720deg);
+   		-webkit-transform: translateX(1000px) translateY(-60px) rotateZ(720deg);
+   		-moz-transform: translateX(1000px) translateY(-210px) rotateZ(720deg);
+   		-ms-transform: translateX(1000px) translateY(-210px) rotateZ(720deg);
+   		-o-transform: translateX(1000px) translateY(-210px) rotateZ(720deg);
+	}
+}
+
+
+
+.left_02
+{
+	background: url(../img/beewo/03.png) no-repeat;
+	width: 144px;
+	height: 129px;
+	position: absolute;
+	top:628px;
+	z-index: 1;	
+}
+.lmg02
+{
+	left: 50%;
+	right: 50%;
+}
+.ele-waste .lmg02
+{
+	animation-delay: 0.8s;
+}
+.ele-waste .left_02
+{
+	animation-name:waste4;
+}
+.ele-waste .lmg02
+{
+	animation: waste4 4s cubic-bezier(0,0.50,0,0.60) infinite;
+}
+
+@keyframes waste4{
+	0%
+	{
+		opacity: 0;
+   		transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-webkit-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-moz-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-ms-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-o-transform: translateX(0) translateY(0px) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(-1000px) translateY(-180px) rotateZ(540deg);
+   		-webkit-transform: translateX(-1000px) translateY(-180px) rotateZ(540deg);
+   		-moz-transform: translateX(-1000px) translateY(-180px) rotateZ(540deg);
+   		-ms-transform: translateX(-1000px) translateY(-180px) rotateZ(540deg);
+   		-o-transform: translateX(-1000px) translateY(-180px) rotateZ(540deg);
+	}
+}
+
+
+
+
+.left_03
+{
+	background: url(../img/beewo/02.png) no-repeat;
+	width: 143px;
+	height: 143px;
+	position: absolute;
+	top: 510px;
+	z-index: 1;	
+}
+.lmg03
+{
+	left: 50%;
+	right: 50%;
+}
+.ele-waste .lmg03
+{
+	animation-delay: 0.4s;
+}
+.ele-waste .left_03
+{
+	animation-name:waste3;
+}
+.ele-waste .lmg03
+{
+	animation: waste3 5s cubic-bezier(0,0.21,0,0.40) infinite;
+}
+
+@keyframes waste3{
+	0%
+	{
+		opacity: 0;
+   		transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-webkit-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-moz-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-ms-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-o-transform: translateX(0) translateY(0px) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(-1000px) translateY(300px) rotateZ(720deg);
+   		-webkit-transform: translateX(-1000px) translateY(300px) rotateZ(720deg);
+   		-moz-transform: translateX(-1000px) translateY(300px) rotateZ(720deg);
+   		-ms-transform: translateX(-1000px) translateY(300px) rotateZ(720deg);
+   		-o-transform: translateX(-1000px) translateY(300px) rotateZ(720deg);
+	}
+}
+
+
+.right_02
+{
+	background: url(../img/beewo/05.png) no-repeat;
+	width: 124px;
+	height: 122px;
+	position: absolute;
+	top: 510px;
+	z-index: 1;	
+}
+
+.lmg05
+{
+	left: 50%;
+	right: 50%;
+}
+.ele-waste .lmg05
+{
+	animation-delay: 0.4s;
+}
+.ele-waste .right_02
+{
+	animation-name:waste5;
+}
+.ele-waste .lmg05
+{
+	animation: waste5 5s cubic-bezier(0,0.21,0,0.40) infinite;
+	-webkit-animation: waste5 5s cubic-bezier(0,0.21,0,0.40) infinite;
+	-moz-animation: waste5 5s cubic-bezier(0,0.21,0,0.40) infinite;
+	-ms-animation: waste5 5s cubic-bezier(0,0.21,0,0.40) infinite;
+	-o-animation: waste5 5s cubic-bezier(0,0.21,0,0.40) infinite;
+}
+
+@keyframes waste5{
+	0%
+	{
+		opacity: 0;
+   		transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-webkit-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-moz-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-ms-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-o-transform: translateX(0) translateY(0px) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(1000px) translateY(300px) rotateZ(720deg);
+   		-webkit-transform: translateX(1000px) translateY(300px) rotateZ(720deg);
+   		-moz-transform: translateX(1000px) translateY(300px) rotateZ(720deg);
+   		-ms-transform: translateX(1000px) translateY(300px) rotateZ(720deg);
+   		-o-transform: translateX(1000px) translateY(300px) rotateZ(720deg);
+	}
+}
+
+
+.right_03
+{
+	background: url(../img/beewo/06.png) no-repeat;
+	width: 144px;
+	height: 129px;
+	position: absolute;
+	top:628px;
+	z-index: 1;	
+}
+.lmg06
+{
+	left: 50%;
+	right: 50%;
+}
+.ele-waste .lmg06
+{
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-ms-animation-delay: 1s;
+	-o-animation-delay: 1s;
+}
+.ele-waste .right_03
+{
+	animation-name:waste6;
+}
+.ele-waste .lmg06
+{
+	animation: waste6 4s cubic-bezier(0,0.50,0,0.60) infinite;
+	-webkit-animation: waste6 4s cubic-bezier(0,0.50,0,0.60) infinite;
+	-moz-animation: waste6 4s cubic-bezier(0,0.50,0,0.60) infinite;
+	-ms-animation: waste6 4s cubic-bezier(0,0.50,0,0.60) infinite;
+	-o-animation: waste6 4s cubic-bezier(0,0.50,0,0.60) infinite;
+}
+
+@keyframes waste6{
+	0%
+	{
+		opacity: 0;
+   		transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-webkit-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-moz-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-ms-transform: translateX(0) translateY(0px) rotateZ(0deg);
+   		-o-transform: translateX(0) translateY(0px) rotateZ(0deg);
+	}
+	100%
+	{
+		opacity: 1;
+		transform: translateX(1000px) translateY(-180px) rotateZ(540deg);
+   		-webkit-transform: translateX(1000px) translateY(-180px) rotateZ(540deg);
+   		-moz-transform: translateX(1000px) translateY(-180px) rotateZ(540deg);
+   		-ms-transform: translateX(1000px) translateY(-180px) rotateZ(540deg);
+   		-o-transform: translateX(1000px) translateY(-180px) rotateZ(540deg);
+	}
+}
+
+
+
+/*第二部分开始*/
+.info_white
+{
+	background-color: #fff;
+	height: 819px;
+	overflow: hidden;
+}
+.info_white .mains
+{
+	padding-top: 186px;
+}
+.info_text
+{
+	padding: 136px 24px 0 0;
+}
+.floatLeft
+{
+	float: left;
+}
+
+.info_text h3
+{
+	font-size: 72px;
+    color: #33337e;
+    border-left: 14px solid #33337e;
+    padding-left: 25px;
+    height: 77px;
+    line-height: 77px;
+}
+.info_text p{
+	font-size: 36px;
+	color: #000;
+	margin-top: 25px;
+	font-weight: lighter;	
+}
+.info_text_img
+{
+	background: url(../img/beewo/man.png) no-repeat;
+	width: 555px;
+	height: 499px;
+}
+.floatRight
+{
+	float: right;
+}
+/*第二部分结束*/
+/*第三块开始*/
+.info_blue{
+	background-color: #ecf0f6;
+    height: 806px;
+}
+.info_blue .info_text_img
+{
+	background: url(../img/beewo/blue.png) no-repeat;
+	width: 505px;
+	height: 482px;
+}
+.info_blue .mains
+{
+	padding-top: 186px;
+}
+/*第三块结束*/
+/*第四块内容开始*/
+.info_white_02
+{
+	background-color: #fff;
+	height: 780px;
+}
+.info_white .mains
+{
+	padding-top: 186px;
+}
+.info_text h3
+{
+	font-size: 72px;
+	color: #33337e;
+    border-left: 14px solid #33337e;
+    padding-left: 25px;
+    height: 77px;
+    line-height: 77px;
+}
+.info_text p
+{
+	font-size: 36px;
+    color: #000000;
+    margin-top: 25px;
+    font-weight: lighter;
+}
+.info_white .info_text_imgs
+{
+	background: url(../img/beewo/ds.png) no-repeat;
+	width: 611px;
+	height: 338px;
+}
+/*第四节块内容结束*/
+/*第五块内容开始*/
+.info_blue_02
+{
+	height: 683px;
+	background-color:#ecf0f6;
+}
+.info_blue_02 .mains
+{
+	padding-top: 186px;
+}
+.info_blue_02 .info_text_im
+{
+	background: url(../img/beewo/rjian.png) no-repeat;
+	width: 507px;
+    height: 381px;
+}
+/*第五块内容结束*/
+
+/*楼层开始*/
+.onthis
+{
+	color: #ff0000;
+	background-position: 0 0;
+}
+.info_right_nav
+{
+	position: absolute;
+    right: 20px;
+    top: 300px;
+    width: 150px;
+    height: 203px;
+}
+.info_right_nav li
+{
+	position: relative;
+	padding-bottom: 16px;
+}
+.info_right_nav li.onthis a
+{
+	color: #ff0000;
+	background-position: 0 0;
+}
+.info_right_nav li a
+{
+	font-size: 16px;
+	background: url(../img/beewo/luoceng.png) no-repeat scroll 0 -21px;
+	padding-left: 33px;
+	height: 21px;
+	line-height: 21px;
+	display: block;
+	color: #009bff;
+}
+.info_right_nav li span.line
+{
+	float: left;
+    background: #009bff;
+    width: 4px;
+    height: 16px;
+    margin-left: 9px;
+    overflow: hidden;
+}
+.info_right_nav li a.last
+{
+	word-break: break-all;
+    white-space: nowrap;
+    background: url(../img/beewo/luoceng.png) no-repeat scroll 0 -42px;
+    width: 21px;
+    height: 21px;
+    display: block;
+}
+/*楼层结束*/
+.footer
+{
+	padding: 0 0 20px;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+.footer p
+{
+	padding: 20px 0 0;
+    color: #666666;
+    font-size: 14px;
+    font-style: normal;
+}
+.footer p a
+{
+	padding: 0 10px;
+    color: #666;
+}

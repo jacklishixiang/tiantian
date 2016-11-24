@@ -1,0 +1,416 @@
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+big,
+em,
+font,
+img,
+strong,
+tt,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	padding: 0;
+	margin: 0
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+fieldset,
+img {
+	border: 0
+}
+
+button,
+input,
+select,
+textarea {
+	font-size: 12px
+}
+
+ol,
+ul,
+li {
+	list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%
+}
+
+body {
+	min-width: 1000px;
+	margin: 0 auto;
+	font-size: 12px;
+	background: none;
+	font-family: "Microsoft YaHei", "Simsun", Arial
+}
+
+body,
+html {
+	height: 100%
+}
+
+td {
+	font-size: 12px;
+	line-height: 160%
+}
+
+.clear {
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	width: auto !important;
+	display: block !important;
+	float: none !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+	outline: none !important
+}
+
+.hide {
+	display: none
+}
+
+a {
+	outline: none;
+	text-decoration: none
+}
+
+.ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table
+}
+
+.clearfix:after {
+	clear: both
+}
+
+*.clearfix {
+	zoom: 1
+}
+
+.fleft {
+	float: left
+}
+
+::-webkit-scrollbar {
+	width: 4px;
+	height: 4px
+}
+
+::-webkit-scrollbar-track {
+	margin: 0px;
+	background-color: rgba(255, 255, 255, 0.1)
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.6)
+}
+
+::-webkit-scrollbar-thumb:active {
+	background-color: rgba(0, 0, 0, 0.7)
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(231, 231, 231, 0.4)
+}
+
+.hide {
+	display: none
+}
+/*导航开始*/
+.topNav {
+	width: 100%;
+	height: 70px;
+	min-width: 1000px;
+	background: rgba(0, 0, 0, 0.5) !important;
+	-pie-background: rgba(0, 0, 0, 0.5) !important;
+	behavior: url(PIE.htc);
+	line-height: 70px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+}
+
+.main {
+	width: 1204px;
+	min-width: 1000px;
+	margin: 0 auto;
+	position: relative;
+	line-height: 70px;
+}
+
+.main .logo {
+	width: 140px;
+	height: 50px;
+	float: left;
+	display: block;
+	line-height: 110px;
+}
+
+.nav {
+	float: right;
+	position: relative;
+}
+
+.nav a {
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	font-family: "微软雅黑";
+	height: 70px;
+	line-height: 70px;
+	padding: 0 16px;
+}
+
+.nav a:hover {
+	color: #fff;
+	background-color: #00b7ff;
+}
+
+.nav ul {
+	width: 102px;
+	position: absolute;
+	top: 65px;
+	right: 0;
+	text-align: center;
+}
+
+.nav ul li {
+	float: left;
+	list-style: none;
+}
+
+.mainPopMenu {
+	display: none;
+}
+
+.mainPopMenu li a {
+	width: 102px;
+	height: 35px;
+	padding: 10px 0;
+	background-color: #00b7ff;
+	overflow: hidden;
+	line-height: 35px;
+	font-size: 14px;
+	color: #00577c;
+	display: block;
+	position: relative;
+}
+
+.hide {
+	display: none;
+}
+
+
+.qu {
+	width: 70px;
+	height: 70px;
+	color: #00577c;
+	background-color: #00b7ff;
+}
+
+.mainPopMenu li a:hover {
+	color: #fff;
+}
+
+/*导航结束*/
+
+.bg
+{
+	width: 100%;
+	height: 735px;
+	background: url(../img/puzu/2Q.jpg) no-repeat;
+	background-position: center top;
+	padding-top: 260px;
+	/*overflow: hidden;*/
+}
+.bg .container {
+    width: 1100px;
+    height: 505px;
+    margin: 0 auto;
+    position: relative;
+}
+.bg .game-wrap {
+    width: 1100px;
+    height: 505px;
+    margin: 0 auto;
+    position: relative;
+}
+.bg .game-wrap .game-box
+{
+	width: 222px;
+    height: 194px;
+    background: url(../img/puzu/kuan.png) no-repeat;
+    position: absolute;
+    top: 110px;
+    left: 0;
+}
+.bg .game-wrap .game-box .game {
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+.bg .game-wrap .game-box .game .text-pic {
+    width: 152px;
+    height: 41px;
+    background: url(../img/puzu/opacity.png) no-repeat;
+    position: absolute;
+    top: 141px;
+    left: 29px;
+    text-align: center;
+    line-height: 41px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 8;
+    font-weight: bold;
+    word-break: break-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.bg .game-wrap .game-box-hover
+{
+	background: url(../img/puzu/12.png) no-repeat;
+}
+.bg .game-wrap .game-box-hover .game .game-pic {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 198px;
+    height: 170px;
+}
+.bg .game-wrap .game-box-hover .game .text-pic
+{
+	color: #009bff;
+}
+.bg .game-wrap .box1 {
+    top: 13px;
+    left: 176px;
+}
+.bg .game-wrap .box3 {
+    top: 110px;
+    left: 352px;
+}
+.bg .game-wrap .box5 {
+    top: 13px;
+    left: 528px;
+}
+.bg .game-wrap .box7 {
+    top: 110px;
+    left: 704px;
+}
+.bg .game-wrap .box8 {
+    top: 13px;
+    left: 877px;
+}
+.bg .game-wrap .box2 {
+    top: 214px;
+    left: 176px;
+}
+.bg .game-wrap .box4 {
+    top: 311px;
+    left: 352px;
+}
+.bg .game-wrap .box6 {
+    top: 214px;
+    left: 528px;
+}
+.bg .game-wrap .box9 {
+    top: 214px;
+    left: 877px;
+}
+
+
+.bg .game-wrap .game-box .game map
+{
+	z-index: 15;
+    cursor: pointer;
+    position: relative;
+}
+.bg .game-wrap .game-box .game area {
+    z-index: 15;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.footer
+{
+	padding: 0 0 20px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    top: 228px;
+    text-align: center;
+}
+.footer p
+{
+	padding: 20px 0 0;
+    color: #666666;
+    font-size: 14px;
+    font-style: normal;
+}
+.footer p a
+{
+	padding: 0 10px;
+    color: #666;
+}
